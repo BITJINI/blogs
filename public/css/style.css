@@ -1,0 +1,643 @@
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:25px;
+}
+
+.navbar-brand img {
+width: 65% \9; /*Force IE10 and below to size SVG images correctly*/
+max-width: 65%;
+margin-top:-13%
+}
+
+.container{
+  width:100%;
+  height:100%;
+}
+
+
+.jumbotron{
+  box-shadow: 1px 1px 1px #C8C8C8;
+  
+}
+.container .jumbotron {
+    border-radius: 3px;
+}
+
+.btn-primary{
+    background: #00DF00;
+    color: white;
+    border-color: white;
+    
+
+
+    
+}
+
+
+.btn-primary:hover{
+    background:#00DF00;
+    color: white;
+    border-color: #00DF00;
+    
+    
+}
+
+.nav .active { background:blue }
+
+.navbar { 
+  borderr: transparent  !important;
+  color:yellow;
+}
+
+
+ul.nav a { color: #FEFEFE !important;font-family: Roboto-Regular; font-weight:normal;}
+ul.nav a:hover { color: #E0E0E0  !important; }
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensed-Light;
+    src: url(RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(Lato-Regular.ttf);
+}
+
+h2{
+  color:#000000 ;
+  font-family: Lato-Regular;
+  font-size: 28px;
+  
+}
+
+h3{
+  color:#000000 ;
+  font-family: Lato-Regular;
+  font-size: 30px;
+  
+}
+
+p{
+  color:#000000  ;
+  font-family: Lato-Light;
+  font-weight: normal;
+  font-size: 18px !important;
+  
+
+}
+
+
+
+div{
+  font-family: Roboto-Regular;
+  font-weight: normal;
+}
+
+@media (max-width:1400px) { 
+.navbar-brand img {
+    width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 50% !important;
+    margin-top:-9%;
+    margin-left:-8%;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:25px;
+}
+
+
+
+
+}
+
+@media (max-width:1200px) { 
+.navbar-brand img {
+    width: 48% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 48% !important;
+    margin-top:-9%
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:25px;
+}
+}
+
+@media (max-width:1000px) { 
+.navbar-brand img {
+    width: 42% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 42% !important;
+    margin-top:-7.5%;
+    margin-left:-5%;
+}
+
+h2{
+  padding-left:4%;
+  padding-right:4%;
+}
+
+h3{
+  padding-left:4%;
+  padding-right:4%;
+}
+
+
+p{
+  padding-left:4%;
+  padding-right:4%;
+  
+}
+.container{
+  margin-top:-2%;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:15px;
+}
+}
+
+@media (max-width:800px) { 
+.navbar-brand img {
+    width: 35% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 35% !important;
+    margin-top:-5.8%;
+    margin-left:-4%
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+
+h3{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+p{
+  padding-left:4%;
+  padding-right:4%;
+}
+.container{
+  margin-top:-2%;
+  margin-bottom:2%;
+
+
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:12px;
+}
+}
+
+@media (max-width:600px) { 
+.navbar-brand img {
+    width: 38% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 38% !important;
+    margin-top:-5%;
+    margin-left:-5%;
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+
+h3{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;  
+}
+
+p{
+  padding-left:4%;
+  padding-right:4%;
+}
+.container{
+  margin-top:-2%;
+  margin-bottom:2%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:15px;
+}
+
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+}
+}
+
+
+@media (max-width:480px) { 
+.navbar-brand img {
+    width: 34% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 34% !important;
+    margin-top:-4%
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+
+h3{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+
+p{
+  padding-left:4%;
+  padding-right:4%;
+}
+.container{
+  margin-top:-2%;
+  margin-bottom:2%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:15px;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+}
+
+
+
+
+}
+
+@media (max-width:440px) { 
+.navbar-brand img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30% !important;
+    margin-top:-3%;
+    margin-left:-2.3%;
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+h3{
+  margin-top:-40px;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+p{
+  padding-left:5%;
+  padding-right:5%;
+}
+
+
+
+.container{
+  margin-top:-5%;
+  margin-bottom:2%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:8px;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+}
+}
+
+@media (max-width:420px) { 
+.navbar-brand img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30% !important;
+    margin-top:-3%;
+    margin-left:-2%;
+}
+h2{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+
+}
+h3{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+
+p{
+  padding-left:4%;
+  padding-right:4%;
+}
+
+.container{
+  margin-top:-6%;
+  margin-bottom:2%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:5px;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+}
+}
+
+
+@media (max-width:415px) { 
+.navbar-brand img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30% !important;
+    margin-top:-3%
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+
+}
+h3{
+  margin-top:-40px;
+  padding-left:4%;
+  padding-right:4%;
+}
+
+p{
+  padding-left:4%;
+  padding-right:4%;
+}
+.container{
+  margin-top:-7%;
+  margin-bottom:2%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:2px;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+}
+}
+
+@media (max-width:409px) { 
+.navbar-brand img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30% !important;
+    margin-top:-3%
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+h3{
+  margin-top:-40px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+
+p{
+  padding-left:3%;
+  padding-right:3%;
+}
+
+.container{
+  margin-top:-7%;
+  margin-bottom:4%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:2px;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+}
+
+
+}
+
+@media (max-width:405px) { 
+.navbar-brand img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30% !important;
+    margin-top:-5%
+}
+
+
+
+h2{
+  margin-top:-40px;
+  padding-left:3%;
+  padding-right:3%;
+  }
+
+  h3{
+  margin-top:-40px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+p{
+  padding-left:3%;
+  padding-right:3%;
+}
+.navbar-toggle{
+
+  
+}
+
+
+.container{
+  margin-top:-7%;
+  margin-bottom:4%;
+  padding-top: 4%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:0.8px;
+}
+.navbar-brand{
+  height:0px;
+  margin-top: -13%;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+
+}
+
+
+}
+
+@media (max-width:380px) { 
+.navbar-brand img {
+    width: 30% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 30% !important;
+    margin-top:-4%
+}
+
+h2{
+  margin-top:-40px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+h3{
+  margin-top:-40px;
+  padding-left:3%;
+  padding-right:3%;
+}
+
+p{
+  padding-left:3%;
+  padding-right:3%;
+}
+.navbar-toggle{
+}
+
+.container{
+  margin-top:-7%;
+  margin-bottom:2%;
+}
+.jumbotron{
+  padding-bottom:0px;
+}
+.navbar-default {
+    background-color: rgba(32, 150, 243, 0.95);
+    padding:1px;
+}
+.navbar-brand{
+  height:0px;
+  margin-top: -16%;
+}
+#myNavbar{
+  background-color: rgba(32, 150, 243, 0.95);
+
+}
+
+
+}
+
+
+
+
+
+@media (max-width:1600px) { 
+  table{
+      margin-left:140px;
+    }
+}
+@media (max-width:1440px) { 
+  table{
+      margin-left:120px;
+    }
+}
+@media (max-width:1400px) { 
+  table{
+      margin-left:105px;
+    }
+}
+
+@media (max-width:1200px) { 
+
+}
+
+@media (max-width:1000px) { 
+
+}
+
+@media (max-width:800px) { 
+  table{
+      margin-left:80px;
+    }
+}
+
+@media (max-width:600px) { 
+  table{
+      margin-left:60px;
+    }
+}
+
+
+@media (max-width:480px) { 
+
+}
+
+@media (max-width:440px) { 
+
+}
+
+@media (max-width:420px) { 
+
+}
+
+
+@media (max-width:415px) { 
+
+}
+
+@media (max-width:409px) { 
+
+}
+
+@media (max-width:405px) { 
+  table{
+      margin-left:50px;
+    }
+}
+
+@media (max-width:380px) { 
+  table{
+      margin-left:110px;
+    }
+}
+
+@media (max-width:320px) { 
+  table{
+      margin-left:90px;
+    }
+}
+
+
+
+

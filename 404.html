@@ -1,0 +1,68 @@
+---
+layout: empty
+title: Not found
+author: Madhusudhan Srinivasa
+---
+
+<div class="notfound">
+  <h1>Whoppa!</h1>
+  <p>Looks like there's a broken link somewhere on the web! Just browse through our recent posts and we are sure you'll find it!</p>
+</div>
+<br>
+<hr>
+<br>
+<div class="row">
+  <div class="span4">
+    <h2>Recent posts</h2>
+
+    {% for post in site.posts %}
+      <div class="recent">
+        <p>
+          <a title="{{ post.title }}" href="{{ site.nonbaseurl }}{{ post.url }}">{{ post.title }}</a>
+          <br>
+          <span class="muted">{{ post.date | date_to_string }}</span>
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="span4">
+    <h2>About Changer</h2>
+
+    <p>We build Web and mobile apps. We are a team of passionate geeks. We love solving problems and providing better solutions using stacks like django, node.js, asp.net. We are specialized in building apps with best User Experience.</p>
+    <p>
+      <a href="http://www.changer.nl/portfolio.html">see our work</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.changer.nl/team.html">meet the team</a>
+    </p>
+  </div>
+  <div class="span4">
+    <h2>Our products</h2>
+
+    <ul class="products-sidebar">
+      <li class="jipio">
+        <a href="http://www.changer.nl/products.html#jip-io">Jip.io</a>
+        <p>Share the best you have with the people you choose.</p>
+      </li>
+      <li class="citycardz">
+        <a href="http://www.changer.nl/products.html#citycardz">Citycardz</a>
+        <p>An easy way for tourists to send personalized postcards.</p>
+      </li>
+      <li class="getsurveyapp">
+        <a href="http://www.changer.nl/products.html#getsurveyapp">Getsurveyapp</a>
+        <p>Say goodbye to paper. The simplest survey-app out there, on and offline!</p>
+      </li>
+      <li class="socialschools">
+        <a href="http://www.changer.nl/products.html#socialschools">Social Schools</a>
+        <p>Our social schools platform brings your school to the web. Everyone participates: teachers, parents & children.</p>
+      </li>
+      <li class="chimp">
+        <a href="http://www.changer.nl/products.html#incidentportal">Incident Portal</a>
+        <p>The easiest way to register incidents and aggregate them to reports</p>
+      </li>
+      <li class="audittool">
+        <a href="http://www.changer.nl/products.html#audittool">Audit tool</a>
+        <p>Engage everyone in your organization's audits while keeping all audited requirements in a central database.</p>
+      </li>
+    </ul>
+  </div>
+</div>

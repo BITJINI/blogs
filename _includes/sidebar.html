@@ -1,0 +1,15 @@
+
+<h2>Recent posts</h2>
+
+{% for post in site.posts %}
+  <div class="recent">
+    <p>
+      <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url | | remove_first: '/' }}">{{ post.title }}</a>
+      <br>
+      <span class="muted">{{ post.date | date_to_string }}</span>
+    </p>
+  </div>
+{% endfor %}
+
+
+

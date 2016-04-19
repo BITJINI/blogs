@@ -1,0 +1,52 @@
+---
+layout: default
+title: Bitjini
+author: Changer
+keywords: nodejs, mongodb, backbone.js, javascript, developer, blog, angular.js, .net, python, django
+summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net and everything else in the world.
+---
+
+
+<h2>About Bitjini</h2>
+<p>We are a bunch of technology enthusiast specialised in mobile application development, especially for iOS and Android platform, as well as web based applications. We simply enjoy programming and developing fresh ideas and shaping them with the touch of latest technology before presenting it to the World.</p>
+<p>
+  <a href="http://www.bitjini.com/team">meet the team</a>
+</p>
+
+
+<div class="blog-description">
+  <h2>Developer blog</h2>
+</div>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="post">
+      <h1>
+        <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url | | remove_first: '/' }}">{{ post.title }}</a>
+      </h1>
+
+      {% if post.profile != %}
+        <img style="width:10%;height:10%" src="{{ post.profile }}"></img><br>
+      {% endif %}
+      
+      <span class="date">
+        On&nbsp;
+        {{ post.date | date_to_string }}
+        &nbsp;by&nbsp;
+      </span>
+      <a href="http://github.com/{{ post.author }}" class="author-link">@{{ post.author }}</a>
+
+      <p>
+        {% if post.image != %}
+         <div style="width:100%">
+         <p style="text-align:center"><img style="margin-top:2%" src="{{ site.url }}assets/{{ post.image }}"></img>
+         </div></p>
+         <br>
+        {% endif %}
+
+        {{ post.content }}
+      </p>
+    </div>
+    <br>
+  {% endfor %}
+</div>
