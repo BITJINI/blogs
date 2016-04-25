@@ -22,6 +22,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/blogs/public/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="/blogs/public/css/app.css" type="text/css" />
+<!--     <link rel="stylesheet" href="/blogs/public/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/blogs/public/css/navbar.css" type="text/css" /> -->
+
+    <link rel="stylesheet" href="/blogs/public/bootstrap/css/bootstrap.min.css">
+  <script src="/blogs/public/bootstrap/js/jquery.min.js"></script>
+  <script src="/blogs/public/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/blogs/public/favico.ico" />
@@ -48,39 +54,214 @@
  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
    <script src="../bootstrap/js/jquery.min.js"></script>
   <script src="../bootstrap/js/bootstrap.min.js"></script>-->
+
+
+<style>
+    body {scrolling:no;
+    /*overflow: hidden;*/
+}
+iframe {position:absolute;
+    z-index:1;
+    top:0px;
+    left:0px;
+}
+
+.rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE*/ 
+
+  background: url('assets/tick.png');
+}
+
+</style>
+
+ <script type="text/javascript">
+$(document).ready(function() {
+$("#popup1").hide();
+  
+});
+
+function showhide()
+     {
+           var div = document.getElementById("popup1");
+    if (div.style.display !== "none") {
+        div.style.display = "none";
+    }
+    else {
+        div.style.display = "block";
+    }
+     }
+
+
+
+
+  window.onresize = function(event) {
+    if(event.currentTarget.outerWidth >767){
+      console.info("showing");
+      $("#call_us").show();
+      $("#base").show();
+      $("#base:before").show();
+    }else{
+      console.info("hiding");
+      $("#call_us").hide();
+      $("#base").hide();
+      $("#base:before").hide();
+    }
+
+    /*if (event.currentTarget.outerWidth <767) {
+      console.info("showing");
+      $("").show();
+    };*/
+  }
+  </script>
 </head>
 
 
+<nav class="navbar navbar-default navbar-fixed-top" style="background:transparent;">
+      <!--<div class="row" style="background-color:#FFFFFF; height:25px;"><p style="margin-right:150px;text-align:right;font-family:sans-serif;font-size:14px;color:#67B2FD;">Call Us: +91-888-037-4442<p></div>  -->
+      <div class="container-fluid">
+            <!--   new contact -->
+            
+             <!-- new contact ends here -->
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>  
-      </button> -->
-      <a style="color:white;margin-left:5%" class="navbar-brand" href="http://staging.bitjini.com/">Bitjini
-        <!-- <img class="img-responsive" style="" src="assets/logo.png"/> -->
-      </a>
-      <a style="color:white;margin-left:85%" class="navbar-brand" href="http://poojapauskar.github.io/blogs/">Blogs
-      </a>
-    </div>
-   
-   
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" >
-        
-        <li><a href="http://bitjini.com/">Back</a></li>
+        <div class="navbar-header">
 
-   
-      </ul>
-      
-    </div>
-  </div>
-</nav>
 
+
+          
+          <button type="button" class="navbar-toggle btn btn-circle" data-toggle="collapse" data-target="#myNavbar"></button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/bitjini_apps_more_logo.png" id="logo"/>
+
+
+            
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <p id="call_us">Call Us: +91-897-123-8365</p>
+            <!-- <li id="navright"><a href="#home" id="a1" style="margin-top:60px;font-size:10px;">Home</a></li>
+            <li id="navright"><a href="#services" id="a2" style="margin-top:60px; font-size:10px;">Services</a></li>
+            <li id="navright"><a href="http://poojapauskar.github.io/blogs/" id="a3" style="margin-top:60px;font-size:10px;">Blog</a></li>
+            <li id="navright"><a href="http://bitjini.com/upcoming/blogs" id="a4" style="margin-top:60px;font-size:10px;">Contact</a></li>
+            <li id="navright"><a href="team.html" id="a4" style="margin-top:60px;font-size:10px;">Team</a></li>
+ -->
+
+<ul id="navbar_links" class="nav navbar-nav onepage-pagination">
+
+            <li><a data-index="1" href="http://staging.bitjini.com/one_page_scroll.php#1" class="active">Home</a></li>
+            <li><a data-index="2" href="http://staging.bitjini.com/one_page_scroll.php#2" class="">Services</a></li>
+            <li><a data-index="" href="http://poojapauskar.github.io/blogs/" class="">Blog</a></li>
+            <li><a data-index="" href="team.php" class="">Team</a></li>
+            <li><a data-index="8" href="http://staging.bitjini.com/one_page_scroll.php#8" class="">Contact</a></li>
+</ul>
+
+
+
+           <li>
+              <div>
+                <!-- <div class="tabs">
+                  <div id="tab1"> -->
+
+                    <button onclick="showhide()" class="btn" id="base" style="border:none;text-decoration:none; font-family:Roboto-Regular;">REQUEST A QUOTE</button>
+                    <!-- <div></div> -->
+                  <!-- </div>
+                </div> -->
+              </div>
+
+
+              <div id="popup1">
+                <div class="popup" id="display_form" style="">
+                  
+                  
+
+                  <div class="row">
+                    <div class="" id="detail" style="background-color:#343945;">
+                      <form action="" role="form-inline" method="post">
+                        <div class="form-group">
+                          <label class="control-label" for="name" style="color:white;"></label>
+                          <input name="name" type="text" class="required form-control" placeholder="Name" id="name" pattern="[a-zA-Z]+" title="Examples: xyz or XYZ or xYz">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="email" style="color:white;"></label>
+                          <input name="email" type="email" class="required form-control" placeholder="Email" id="email" pattern="[^ @]+@[^ @]+.[a-z]+" title="Example:xyz@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="telephone" style="color:white;"></label>
+                          <input name="phone" type="telephone" class="required form-control" placeholder="Telephone" id="telephone" pattern="[0-9]{12}" title="Example:919009006464">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="project" style="color:white;"></label>
+                          <textarea style="margin:0 auto" name="project_description" class="form-control" placeholder="Project Description" rows="4" id="project"></textarea>
+                        </div>
+                      
+
+                      <br>
+                      <div class="row" style="margin-left:20px;">
+                        <div class="col-xs-3">
+                          <img src="assets/form_ios.png" class="img-responsive"><br>
+                          <div class="add-check" id="rad_but">
+                            <label class="rad active">
+                              <input type="radio" name="r1" value="1" checked="checked" />
+                              <i></i>
+                            </label>
+                            <p id="product_name" style="margin-left:5%;">ios</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-3">
+                          <img src="assets/form_android.png" class="img-responsive"><br>
+                          <div id="rad_but">
+                            <label class="rad">
+                              <input type="radio" name="r1" value="2" />
+                              <i></i>
+                            </label>
+                            <p id="product_name" style="margin-left:-12%;">Android</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-3">
+                          <img src="assets/form_globe.png" class="img-responsive"><br>
+                          <div id="rad_but">
+                            <label class="rad">
+                              <input type="radio" name="r1" value="3" />
+                              <i></i>
+                            </label>
+                            <p id="product_name" style="margin-left:2%;">Web</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-3">
+                          <img src="assets/form_growth.png" class="img-responsive"><br>
+                          <div id="rad_but">
+                            <label class="rad">
+                              <input type="radio" name="r1" value="4" />
+                              <i></i>
+                            </label>
+                            <p id="product_name" style="margin-left:-10%;">Growth Hacking</p>
+                          </div>
+                        </div>
+                      </div><br>
+
+                      <div class="row" id="butt3">
+                        <a class="" href="#"><button type="submit" class="btn custom center-block">SUBMIT</button></a>
+                      </div>
+
+                    </form>
+
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
         </div>
       </div>
       <div class="container">
