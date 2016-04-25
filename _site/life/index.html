@@ -67,7 +67,7 @@ iframe {position:absolute;
 
 .rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE*/ 
 
-  background: url('assets/tick.png');
+  background: url('/blogs/assets/tick.png');
 }
 
 </style>
@@ -127,11 +127,8 @@ function showhide()
 
           
           <button type="button" class="navbar-toggle btn btn-circle" data-toggle="collapse" data-target="#myNavbar"></button>
-          <a class="navbar-brand" href="#">
-            <img src="assets/bitjini_apps_more_logo.png" id="logo"/>
-
-
-            
+          <a class="navbar-brand" href="http://staging.bitjini.com/">
+            <img src="/blogs/assets/bitjini_apps_more_logo.png" id="logo">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -149,21 +146,18 @@ function showhide()
             <li><a data-index="1" href="http://staging.bitjini.com/one_page_scroll.php#1" class="active">Home</a></li>
             <li><a data-index="2" href="http://staging.bitjini.com/one_page_scroll.php#2" class="">Services</a></li>
             <li><a data-index="" href="http://poojapauskar.github.io/blogs/" class="">Blog</a></li>
-            <li><a data-index="" href="team.php" class="">Team</a></li>
+            <li><a data-index="" href="http://staging.bitjini.com/team.php" class="">Team</a></li>
             <li><a data-index="8" href="http://staging.bitjini.com/one_page_scroll.php#8" class="">Contact</a></li>
 </ul>
 
 
 
-           <li>
+           <!-- <li>
               <div>
-                <!-- <div class="tabs">
-                  <div id="tab1"> -->
+            
 
                     <button onclick="showhide()" class="btn" id="base" style="border:none;text-decoration:none; font-family:Roboto-Regular;">REQUEST A QUOTE</button>
-                    <!-- <div></div> -->
-                  <!-- </div>
-                </div> -->
+                  
               </div>
 
 
@@ -174,7 +168,7 @@ function showhide()
 
                   <div class="row">
                     <div class="" id="detail" style="background-color:#343945;">
-                      <form action="" role="form-inline" method="post">
+                      <form action="/blogs/public/directory/submit.php" role="form-inline" method="post">
                         <div class="form-group">
                           <label class="control-label" for="name" style="color:white;"></label>
                           <input name="name" type="text" class="required form-control" placeholder="Name" id="name" pattern="[a-zA-Z]+" title="Examples: xyz or XYZ or xYz">
@@ -199,7 +193,7 @@ function showhide()
                       <br>
                       <div class="row" style="margin-left:20px;">
                         <div class="col-xs-3">
-                          <img src="assets/form_ios.png" class="img-responsive"><br>
+                          <img src="/blogs/assets/form_ios.png" class="img-responsive"><br>
                           <div class="add-check" id="rad_but">
                             <label class="rad active">
                               <input type="radio" name="r1" value="1" checked="checked" />
@@ -210,7 +204,7 @@ function showhide()
                         </div>
 
                         <div class="col-xs-3">
-                          <img src="assets/form_android.png" class="img-responsive"><br>
+                          <img src="/blogs/assets/form_android.png" class="img-responsive"><br>
                           <div id="rad_but">
                             <label class="rad">
                               <input type="radio" name="r1" value="2" />
@@ -221,7 +215,7 @@ function showhide()
                         </div>
 
                         <div class="col-xs-3">
-                          <img src="assets/form_globe.png" class="img-responsive"><br>
+                          <img src="/blogs/assets/form_globe.png" class="img-responsive"><br>
                           <div id="rad_but">
                             <label class="rad">
                               <input type="radio" name="r1" value="3" />
@@ -232,7 +226,7 @@ function showhide()
                         </div>
 
                         <div class="col-xs-3">
-                          <img src="assets/form_growth.png" class="img-responsive"><br>
+                          <img src="/blogs/assets/form_growth.png" class="img-responsive"><br>
                           <div id="rad_but">
                             <label class="rad">
                               <input type="radio" name="r1" value="4" />
@@ -254,7 +248,7 @@ function showhide()
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
 
 
           </ul>
