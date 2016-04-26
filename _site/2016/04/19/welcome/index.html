@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <link rel="shortcut icon" href="assets/logo.ico"/>
+  <link rel="shortcut icon" href="/blogs/assets/logo.ico"/>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
@@ -134,7 +134,7 @@ function showhide()
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <p id="call_us">Call Us: +91-897-123-8365</p>
+           <!--  <p id="call_us">Call Us: +91-897-123-8365</p> -->
             <!-- <li id="navright"><a href="#home" id="a1" style="margin-top:60px;font-size:10px;">Home</a></li>
             <li id="navright"><a href="#services" id="a2" style="margin-top:60px; font-size:10px;">Services</a></li>
             <li id="navright"><a href="http://poojapauskar.github.io/blogs/" id="a3" style="margin-top:60px;font-size:10px;">Blog</a></li>
@@ -144,11 +144,11 @@ function showhide()
 
 <ul id="navbar_links" class="nav navbar-nav onepage-pagination">
 
-            <li><a data-index="1" href="http://staging.bitjini.com/one_page_scroll.php#1" class="active">Home</a></li>
-            <li><a data-index="2" href="http://staging.bitjini.com/one_page_scroll.php#2" class="">Services</a></li>
-            <li><a data-index="" href="http://poojapauskar.github.io/blogs/" class="">Blog</a></li>
-            <li><a data-index="" href="http://staging.bitjini.com/team.php" class="">Team</a></li>
-            <li><a data-index="8" href="http://staging.bitjini.com/one_page_scroll.php#8" class="">Contact</a></li>
+            <li><a id="link" data-index="1" href="http://staging.bitjini.com/one_page_scroll.php#1" class="active">Home</a></li>
+            <li><a id="link" data-index="2" href="http://staging.bitjini.com/one_page_scroll.php#2" class="">Services</a></li>
+            <li><a id="link" data-index="" href="http://poojapauskar.github.io/blogs/" class="">Blog</a></li>
+            <li><a id="link" data-index="" href="http://staging.bitjini.com/team.php" class="">Team</a></li>
+            <li><a id="link" data-index="8" href="http://staging.bitjini.com/one_page_scroll.php#8" class="">Contact</a></li>
 </ul>
 
 
@@ -169,7 +169,7 @@ function showhide()
 
                   <div class="row">
                     <div class="" id="detail" style="background-color:#343945;">
-                      <form action="/blogs/public/directory/submit.php" role="form-inline" method="post">
+                      <form action="" role="form-inline" method="post">
                         <div class="form-group">
                           <label class="control-label" for="name" style="color:white;"></label>
                           <input name="name" type="text" class="required form-control" placeholder="Name" id="name" pattern="[a-zA-Z]+" title="Examples: xyz or XYZ or xYz">
@@ -262,7 +262,9 @@ function showhide()
         <div class="row">
           <div class="span8">
             <div role="main" id="posts">
-              <link rel="shortcut icon" href="assets/logo.ico"/>
+              <!-- 
+<link rel="shortcut icon" href="/blogs/assets/logo.ico"/> -->
+<link rel="shortcut icon" href="/blogs/public/favico.ico" />
 <br>
 <h2 style="margin-top:-2%">Welcome!</h2>
 <br>
@@ -293,7 +295,9 @@ function showhide()
   <h2>Related Posts</h2>
   <ul class="posts">
     
-      <li><span class="date">25 Apr 2016</span> &nbsp;&raquo;&nbsp; <a title="Our Contacts" href="/blogs/2016/04/25/contacts/">Our Contacts</a></li>
+      <li><span class="date">26 Apr 2016</span> &nbsp;&raquo;&nbsp; <a title="App Development Insight!" href="/blogs/2016/04/26/hi/">App Development Insight!</a></li>
+    
+      <li><span class="date">25 Apr 2016</span> &nbsp;&raquo;&nbsp; <a title="Hello!" href="/blogs/2016/04/25/hello/">Hello!</a></li>
     
       <li><span class="date">13 Jul 2013</span> &nbsp;&raquo;&nbsp; <a title="Services" href="/blogs/2013/07/13/services/">Services</a></li>
     
@@ -324,19 +328,27 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
           <div class="span4">
             <div class="sidebar">
               
-<h2>Recent posts</h2>
+<h4>Recent posts</h4>
 
 
   <div class="recent">
-    <p>
-      <a title="Our Contacts" href="/blogs/2016/04/25/contacts/">Our Contacts</a>
+    <p  id="side_title" >
+      <a title="App Development Insight!" href="/blogs/2016/04/26/hi/">App Development Insight!</a>
+      <br>
+      <span class="muted">26 Apr 2016</span>
+    </p>
+  </div>
+
+  <div class="recent">
+    <p  id="side_title" >
+      <a title="Hello!" href="/blogs/2016/04/25/hello/">Hello!</a>
       <br>
       <span class="muted">25 Apr 2016</span>
     </p>
   </div>
 
   <div class="recent">
-    <p>
+    <p  id="side_title" >
       <a title="Welcome!" href="/blogs/2016/04/19/welcome/">Welcome!</a>
       <br>
       <span class="muted">19 Apr 2016</span>
@@ -344,7 +356,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
   </div>
 
   <div class="recent">
-    <p>
+    <p  id="side_title" >
       <a title="Services" href="/blogs/2013/07/13/services/">Services</a>
       <br>
       <span class="muted">13 Jul 2013</span>
@@ -352,7 +364,7 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
   </div>
 
   <div class="recent">
-    <p>
+    <p  id="side_title" >
       <a title="Our Products" href="/blogs/2013/07/10/products/">Our Products</a>
       <br>
       <span class="muted">10 Jul 2013</span>

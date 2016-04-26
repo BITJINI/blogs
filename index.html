@@ -7,45 +7,48 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
 ---
 
 
-<h2>About Bitjini</h2>
+<!-- <h2>About Bitjini</h2>
 <p>We are a bunch of technology enthusiast specialised in mobile application development, especially for iOS and Android platform, as well as web based applications. We simply enjoy programming and developing fresh ideas and shaping them with the touch of latest technology before presenting it to the World.</p>
 <p>
   <a href="http://www.bitjini.com/team">meet the team</a>
-</p>
+</p> -->
 
 
 <div class="blog-description">
-  <h2>Developer blog</h2>
+  <!-- <h2>Developer blog</h2> -->
 </div>
 
 <div class="posts">
   {% for post in site.posts %}
     <div class="post">
-      <h1>
+      <h1 id="title" >
         <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url | | remove_first: '/' }}">{{ post.title }}</a>
       </h1>
 
-      {% if post.profile != %}
-        <img style="width:10%;height:10%" src="{{ post.profile }}"></img><br>
-      {% endif %}
       
-      <span class="date">
-        On&nbsp;
-        {{ post.date | date_to_string }}
-        &nbsp;by&nbsp;
-      </span>
-      <a href="http://github.com/{{ post.author }}" class="author-link">@{{ post.author }}</a>
-
-      <p>
-        {% if post.image != %}
-         <div style="width:100%">
-         <p style="text-align:center"><img style="margin-top:2%" src="{{ site.url }}assets/{{ post.image }}"></img>
-         </div></p>
-         <br>
-        {% endif %}
-
-        {{ post.content }}
-      </p>
+      <div class="post-container">                
+        <div class="post-thumb">
+          {% if post.image != %}
+             <img style="" src="{{ site.url }}assets/{{ post.image }}" />
+          {% endif %}
+        </div> 
+        <div class="post-content">
+            <p>{{ post.content }}</p>
+        </div>
+      </div>
+      
+      
+      <div>
+            {% if post.profile != %}
+              <img style="width:10%;height:10%" src="{{ post.profile }}"></img><br>
+            {% endif %}
+            <span class="date">
+              
+              {{ post.date | date_to_string }}
+             
+            </span>
+            <a href="http://github.com/{{ post.author }}" class="author-link">@{{ post.author }}</a>
+      </div>
     </div>
     <br>
   {% endfor %}
