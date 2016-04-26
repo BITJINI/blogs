@@ -13,7 +13,6 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
   <a href="http://www.bitjini.com/team">meet the team</a>
 </p> -->
 
-
 <div class="blog-description">
   <!-- <h2>Developer blog</h2> -->
 </div>
@@ -29,18 +28,18 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
       <div class="post-container">                
         <div class="post-thumb">
           {% if post.image != %}
-             <img style="" src="{{ site.url }}assets/{{ post.image }}" />
+             <img id="img1" style="" src="{{ site.url }}assets/{{ post.image }}" />
           {% endif %}
         </div> 
         <div class="post-content">
-            <p>{{ post.content }}</p>
+            <h3>{{ post.content }}</h3>
         </div>
       </div>
       
       
       <div>
             {% if post.profile != %}
-              <img style="width:10%;height:10%" src="{{ post.profile }}"></img><br>
+              <img style="width:10%;height:10%" src="{{ post.profile }}"></img>
             {% endif %}
             <span class="date">
               
