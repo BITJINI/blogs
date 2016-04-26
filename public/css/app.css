@@ -7,6 +7,10 @@
   font-family: Roboto-Light;
   src: url(/blogs/public/css/Roboto-Medium.ttf);
 }
+@font-face {
+  font-family: Respective-Regular;
+  src: url(/blogs/public/css/Respective-Regular.ttf);
+}
 
 h4{
   font-family: Roboto-Regular !important;
@@ -20,6 +24,14 @@ h3 {
 
 #title{
   font-family: Roboto-Regular !important;
+}
+
+
+#bit_blog{
+  font-family: Respective-Regular !important;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 
@@ -158,6 +170,9 @@ a:focus{
 
 #link { color: black !important;font-family: Roboto-Regular;}
 #link:hover{ color: #3197FF !important; }
+
+#link1 { color: #66cc33 !important;font-family: Roboto-Regular;}
+#link1:hover{ color: #3197FF !important; }
 
 
 #base { color:#FEF7F0 !important; font-family: Roboto-Bold; }
