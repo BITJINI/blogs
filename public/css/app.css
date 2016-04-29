@@ -1,3 +1,7 @@
+.navbar-default{
+  border: transparent !important;
+
+}
 
 @font-face {
   font-family: Roboto-Regular;
