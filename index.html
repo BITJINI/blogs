@@ -18,7 +18,9 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
 </div>
 
 <div class="posts">
+
   {% for post in site.posts %}
+
     <div class="post">
       <h1 id="title" >
         <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url | | remove_first: '/' }}">{{ post.title }}</a>
@@ -39,7 +41,7 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
       
       <div>
             {% if post.profile != %}
-              <img style="width:10%;height:10%" src="{{ post.profile }}"></img>
+              <img style="width:10%;height:10%" src="{{ site.url }}assets/{{ post.user_image }}"></img>
             {% endif %}
             <span class="date">
               
