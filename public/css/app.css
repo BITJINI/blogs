@@ -50,7 +50,14 @@ h3 {
 
 #img1{
 
-  width:400px;height:400px
+  width:350px;height:350px;
+}
+
+#img2{
+
+  width:400px;height:400px;
+  vertical-align: center;
+  margin-left: 17%;
 }
 
 div.inline { float:left; }
