@@ -3,6 +3,8 @@
 
 }
 
+
+
 @font-face {
   font-family: Roboto-Regular;
   src: url(/blogs/public/css/Roboto-Regular.ttf);
@@ -618,11 +620,11 @@ h5 {
   Header
 ================================================
 */
-.header-wrap{
+/*.header-wrap{
   background: black;
   width:100%;
   min-width: 960px;
-}
+}*/
 
 /*ul.menu {
   text-align: right;
