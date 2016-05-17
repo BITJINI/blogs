@@ -69,7 +69,43 @@ div.inline { float:left; }
 .post-container {
     /*margin: 20px 20px 0 0;  
     border: 5px solid #333;*/
-    overflow: auto
+    overflow: auto;
+}
+
+/*Smaller screens responsive*/
+@media (max-width:700px) { 
+        #img1{
+
+          width:120px !important;
+          height:120px !important;
+        }
+
+        .post-container {
+            /*margin: 20px 20px 0 0;  
+            border: 5px solid #333;*/
+            margin-right: 55%;
+            font-size: 10px;
+        }
+        a{
+          margin-right: 55%;
+        }
+        .span4{
+          margin-left: 2% !important;
+        }
+
+
+        #img2{
+          width:140px !important;
+          height:140px !important;
+          margin-left: 11%;
+        }
+        .title{
+          margin-left: -55%;
+        }
+        #con{
+          font-size: 10px !important;
+          margin-right: 58% !important;
+        }
 }
 .post-thumb {
     float: left;
