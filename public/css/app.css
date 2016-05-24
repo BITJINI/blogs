@@ -73,12 +73,14 @@ h3::first-letter{
 
 
 h4{
-   text-align:left;
   border-bottom: 1px solid #3197FF;
   color:black;
   /*font-weight: bold !important;*/
 }
 h3 {
+
+   text-align:justify;
+   margin-right: 7%;
   /*  margin-left: 220px*/
   font-size: 14px !important;
 }
@@ -278,7 +280,7 @@ div.inline { float:left; }
           margin-left: -55%;
         }
         #con{
-          font-size: 10px !important;
+          font-size: 14px !important;
           margin-right: 58% !important;
         }
 }
