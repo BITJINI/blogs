@@ -80,7 +80,9 @@ img{
 	display: none;
 }
 
-
+#logo{
+	margin-top: -8px;
+}
 
 
 @media (max-width: 1400px){
@@ -88,7 +90,7 @@ img{
 	width:163px;
 	height:71px;
 	margin-left: 10px !important;
-	margin-top: 18px !important;
+	margin-top: -8px !important;
 }
 	h1{
 		color:#69B4FF;
@@ -117,7 +119,7 @@ img{
 	width:160px;
 	height:68px;
 	margin-left: 10px;
-	margin-top: 15px;
+	margin-top: -8px;
 }
 	h1{
 		color:#69B4FF;
@@ -146,7 +148,7 @@ img{
 	width:155px;
 	height:66px;
 	margin-left: 10px;
-	margin-top: 15px;
+	margin-top: -8px;
 }
 	h1{
 		color:#69B4FF;
@@ -174,7 +176,7 @@ img{
 	width:150px;
 	height:64px;
 	margin-left: 10px;
-	margin-top: 15px;
+	margin-top: -8px;
 }
 	h1{
 		color:#69B4FF;
@@ -203,7 +205,7 @@ img{
 	width:145px;
 	height:62px;
 	margin-left: 10px;
-	margin-top: 22px !important;
+	margin-top: -8px !important;
 }
 	h1{
 		color:#69B4FF;
