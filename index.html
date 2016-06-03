@@ -24,7 +24,7 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
 
     <div class="post">
       <h1 id="title" >
-        <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url | | remove_first: '/' }}">{{ post.title }}</a>
+        <a title="{{ post.title }}" target="_blank" href="{{ site.baseurl }}{{ post.url | | remove_first: '/' }}">{{ post.title }}</a>
       </h1>
 
       
@@ -49,7 +49,7 @@ summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net 
               {{ post.date | date_to_string }}
              
             </span>
-            <a href="http://github.com/{{ post.author }}" class="author-link">@{{ post.author }}</a>
+            <a target="_blank" href="http://github.com/{{ post.author }}" class="author-link">@{{ post.author }}</a>
       </div>
     </div>
     <br>
