@@ -32,7 +32,7 @@ If you haven't initialised the pod yet then just type
 ```
 pod init
 ```
-and type install the pod.
+and install the pod.
 
 ```
 pod install
