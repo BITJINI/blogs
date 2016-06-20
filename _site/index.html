@@ -180,18 +180,19 @@ function showhide()
 
 <p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences **sharedPreferences** = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
-Ex: **sharedPreferences** =getSharedPreferences(MY_PREFS, 0);
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
 
 </code></pre>
 </div>
 <p>MY_PREFS : name of the file 
 0 : is the operating mode</p>
 
-<p>The first parameter is the key and second parameter is the mode.
-<strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
+<p>The first parameter is the key and second parameter is the mode.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = **sharedPreferences**.edit();
+<p><strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
 editor.putString("name", sName));
 editor.putString("password", sPassword));
 
@@ -202,11 +203,11 @@ editor.commit();
 
 <p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if (**sharedpreferences**.contains("name")) {
-**sharedPreferences**.getString("name",””);
+<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("name")) {
+  sharedPreferences.getString("name",””);
 }
-if (**sharedpreferences**.contains("password")) {
-**sharedPreferences**.getString("password",””);
+if (sharedpreferences.contains("password")) {
+  sharedPreferences.getString("password",””);
 }
 </code></pre>
 </div>
@@ -260,19 +261,19 @@ if (**sharedpreferences**.contains("password")) {
 
 <p>GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>	GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
-	mRecyclerView.setLayoutManager(mLayoutManager);
+<div class="highlighter-rouge"><pre class="highlight"><code>GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
+mRecyclerView.setLayoutManager(mLayoutManager);
 
-	mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-        @Override
-        public int getSpanSize(int position) {
-		if (position == 0 || position == 6) {
-                    return 3; // ITEMS AT POSITION 1 AND 6 OCCUPY 2 SPACES
-                } else {
-                    return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
-                }
+mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+    @Override
+    public int getSpanSize(int position) {
+	if (position == 0 || position == 6) {
+                return 3; // ITEMS AT POSITION 1 AND 6 OCCUPY 2 SPACES
+            } else {
+                return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
             }
-        });
+        }
+    });
 
 </code></pre>
 </div>

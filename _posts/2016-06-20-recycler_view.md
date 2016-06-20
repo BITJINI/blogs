@@ -25,19 +25,19 @@ GridLayoutManager will decide which part of screen the views are to be placed. I
 
 
 ````````
-	GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
-	mRecyclerView.setLayoutManager(mLayoutManager);
+GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
+mRecyclerView.setLayoutManager(mLayoutManager);
 
-	mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-        @Override
-        public int getSpanSize(int position) {
-		if (position == 0 || position == 6) {
-                    return 3; // ITEMS AT POSITION 1 AND 6 OCCUPY 2 SPACES
-                } else {
-                    return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
-                }
+mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+    @Override
+    public int getSpanSize(int position) {
+	if (position == 0 || position == 6) {
+                return 3; // ITEMS AT POSITION 1 AND 6 OCCUPY 2 SPACES
+            } else {
+                return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
             }
-        });
+        }
+    });
 
 ````````
 
