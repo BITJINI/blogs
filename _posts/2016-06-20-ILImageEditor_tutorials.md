@@ -9,7 +9,7 @@ image: ILImageEditor_Blog.png
 user_image: Muqtadir.jpeg
 ---
 
-#ILImageEditor
+ILImageEditor
 
 While I was working on an image editing **[application](https://appsto.re/in/mEN5cb.i)** I came across some very basic operations that every application performs on the image being edited. The code wasn't difficult to write for it, but "Hey! who wants to do all that work". So, I decide to write a simple framework that performs these operations for the developer.
 
@@ -53,7 +53,7 @@ var editor = ILImageEditor()
 
 Now, we can use this singleton to access the editing options provided by the installed framework.
 
-####Features
+**Features**
 - Fix orientation.
 - Rotate an image clockwise or anti-clockwise.
 - Mirror an image along horizontal or vertical axis.
@@ -113,6 +113,6 @@ let croppedImage = cropAnImageToRect(image, rectToCrop: rect)
 
 The above function crops the image that lie in the provided rect and returns the cropped image.
 
-##Conclusion
+**Conclusion**
 
 Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter **[@muqtadir_ahmed](https://twitter.com/muqtadir_ahmed)**, or if you find any bugs or crashes please fork my repository at **[Github](https://github.com/ill-Logical/ILImageEditor)** and send raise an issue. 
