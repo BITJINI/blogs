@@ -13,7 +13,7 @@ Shared Preferences
 
 Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.
 
-Android stores Shared Preferences settings as XML file in shared_prefs folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().
+Android stores Shared Preferences settings as XML file in **shared_prefs** folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().
 
 Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.
 
@@ -21,11 +21,11 @@ Shared Preferences is application specific i.e data is lost if the user uninstal
 
 
 ````````
-SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
-Ex: sharedPreferences =getSharedPreferences(VZCARD_PREFS, 0);
+SharedPreferences **sharedPreferences** = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+Ex: **sharedPreferences** =getSharedPreferences(MY_PREFS, 0);
 
 ````````
-VZCARD_PREFS : name of the file 
+MY_PREFS : name of the file 
 0 : is the operating mode
 
 The first parameter is the key and second parameter is the mode.
@@ -33,8 +33,10 @@ The first parameter is the key and second parameter is the mode.
 
 
 ````````
-SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString("token", token));
+SharedPreferences.Editor editor = **sharedPreferences**.edit();
+editor.putString("name", sName));
+editor.putString("password", sPassword));
+
 editor.commit();
 
 ````````
@@ -42,8 +44,11 @@ editor.commit();
 **Step 3**:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below
 
 ````````
-if (sharedpreferences.contains("token")) {
-sharedPreferences.getString("token",””);
+if (**sharedpreferences**.contains("name")) {
+**sharedPreferences**.getString("name",””);
+}
+if (**sharedpreferences**.contains("password")) {
+**sharedPreferences**.getString("password",””);
 }
 ````````
 
