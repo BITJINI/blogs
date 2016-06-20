@@ -174,9 +174,9 @@ div.inline { float:left; }
         h3{
           font-size: 13px !important;
         }
-        h3::first-letter{
+       /* h3::first-letter{
           font-size: 30px !important;
-        }
+        }*/
 }
 
 

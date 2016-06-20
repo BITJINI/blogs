@@ -11,9 +11,9 @@ user_image: Muqtadir.jpeg
 
 ILImageEditor
 
-While I was working on an image editing **[application](https://appsto.re/in/mEN5cb.i)** I came across some very basic operations that every application performs on the image being edited. The code wasn't difficult to write for it, but "Hey! who wants to do all that work". So, I decide to write a simple framework that performs these operations for the developer.
+While I was working on an image editing application I came across some very basic operations that every application performs on the image being edited. The code wasn't difficult to write for it, but "Hey! who wants to do all that work". So, I decide to write a simple framework that performs these operations for the developer.
 
-**[ILImageEditor](https://github.com/ill-Logical/ILImageEditor)** is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.
+ILImageEditor is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.
 
 Ok, so to start the tutorial we'll just install the pod by adding the following line to our Podfile.
 
@@ -45,7 +45,7 @@ Let's start by import the framework in our class.
 import ILImageEditor
 ```
 
-In the class we initialise the instance of the [**ILImageEditor**](https://github.com/ill-Logical/ILImageEditor).
+In the class we initialise the instance of the ILImageEditor.
 
 ```
 var editor = ILImageEditor()
@@ -75,7 +75,7 @@ let image = UIImage(named: "Sample")
 let finishedImage = editor.editImageWithOptions(image, withOptions: .rotateClockWise)
 ```
 
-The above code takes an image and image operation as a parameter. So, as we can see we are asking [**ILImageEditor**](https://github.com/ill-Logical/ILImageEditor) to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It's ready for export/upload.
+The above code takes an image and image operation as a parameter. So, as we can see we are asking ILImageEditor to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It's ready for export/upload.
 
 Following are other options for *"withOptions"* that the above method provides functionality of are:
 
@@ -115,4 +115,4 @@ The above function crops the image that lie in the provided rect and returns the
 
 **Conclusion**
 
-Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter **[@muqtadir_ahmed](https://twitter.com/muqtadir_ahmed)**, or if you find any bugs or crashes please fork my repository at **[Github](https://github.com/ill-Logical/ILImageEditor)** and send raise an issue. 
+Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter @muqtadir_ahmed, or if you find any bugs or crashes please fork my repository at Github and send raise an issue. 

@@ -172,9 +172,9 @@ function showhide()
         <div class="post-content">
             <h3><p>ILImageEditor</p>
 
-<p>While I was working on an image editing <strong><a href="https://appsto.re/in/mEN5cb.i">application</a></strong> I came across some very basic operations that every application performs on the image being edited. The code wasn’t difficult to write for it, but “Hey! who wants to do all that work”. So, I decide to write a simple framework that performs these operations for the developer.</p>
+<p>While I was working on an image editing application I came across some very basic operations that every application performs on the image being edited. The code wasn’t difficult to write for it, but “Hey! who wants to do all that work”. So, I decide to write a simple framework that performs these operations for the developer.</p>
 
-<p><strong><a href="https://github.com/ill-Logical/ILImageEditor">ILImageEditor</a></strong> is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.</p>
+<p>ILImageEditor is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.</p>
 
 <p>Ok, so to start the tutorial we’ll just install the pod by adding the following line to our Podfile.</p>
 
@@ -206,7 +206,7 @@ end
 </code></pre>
 </div>
 
-<p>In the class we initialise the instance of the <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a>.</p>
+<p>In the class we initialise the instance of the ILImageEditor.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>var editor = ILImageEditor()
 </code></pre>
@@ -236,7 +236,7 @@ let finishedImage = editor.editImageWithOptions(image, withOptions: .rotateClock
 </code></pre>
 </div>
 
-<p>The above code takes an image and image operation as a parameter. So, as we can see we are asking <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a> to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It’s ready for export/upload.</p>
+<p>The above code takes an image and image operation as a parameter. So, as we can see we are asking ILImageEditor to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It’s ready for export/upload.</p>
 
 <p>Following are other options for <em>“withOptions”</em> that the above method provides functionality of are:</p>
 
@@ -276,7 +276,7 @@ let croppedImage = cropAnImageToRect(image, rectToCrop: rect)
 
 <p><strong>Conclusion</strong></p>
 
-<p>Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter <strong><a href="https://twitter.com/muqtadir_ahmed">@muqtadir_ahmed</a></strong>, or if you find any bugs or crashes please fork my repository at <strong><a href="https://github.com/ill-Logical/ILImageEditor">Github</a></strong> and send raise an issue.</p>
+<p>Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter @muqtadir_ahmed, or if you find any bugs or crashes please fork my repository at Github and send raise an issue.</p>
 </h3>
         </div>
       </div>
