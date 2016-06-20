@@ -3,7 +3,7 @@ layout: post
 categories: [iOS, Swift, CocoaPods]
 title: ILImageEditor tutorial.
 summary: ILImageEditor pod tutorial in swift to perform general editing operations on an image (ex: rotate, mirror, resize, crop). 
-author: muqtadir_ahmed
+author: MuqThe2nd
 profile: https://github.com/ill-Logical
 image: ILImageEditor_Blog.png
 user_image: Muqtadir.jpeg
