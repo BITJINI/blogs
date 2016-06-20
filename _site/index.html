@@ -159,16 +159,155 @@ function showhide()
 
     <div class="post">
       <h1 id="title" >
-
-        <a title="Bootstrap" target="_blank" href="/blogs/2016/06/13/bootstrap/">Bootstrap</a>
-
+        <a title="ILImageEditor tutorial"  href="/blogs/2016/06/20/ILImageEditor_tutorials/">ILImageEditor tutorial</a>
       </h1>
 
       
       <div class="post-container">                
         <div class="post-thumb">
           
+             <img id="img1" style="" src="assets/ILImageEditor_Blog.png" />
+          
+        </div> 
+        <div class="post-content">
+            <h3><h1 id="ilimageeditor">ILImageEditor</h1>
 
+<p>While I was working on an image editing <strong><a href="https://appsto.re/in/mEN5cb.i">application</a></strong> I came across some very basic operations that every application performs on the image being edited. The code wasn’t difficult to write for it, but “Hey! who wants to do all that work”. So, I decide to write a simple framework that performs these operations for the developer.</p>
+
+<p><strong><a href="https://github.com/ill-Logical/ILImageEditor">ILImageEditor</a></strong> is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.</p>
+
+<p>Ok, so to start the tutorial we’ll just install the pod by adding the following line to our Podfile.</p>
+
+<p>````````
+platform :ios, ‘8.0’</p>
+
+<p>target ‘MyProjectName’ do
+  use_frameworks!
+  pod ‘ILImageEditor’</p>
+
+<p>end
+````````
+If you haven’t initialised the pod yet then just type</p>
+
+<p><code>
+pod init
+</code>
+and install the pod.</p>
+
+<p><code>
+pod install
+</code></p>
+
+<p>Now we’re all set to use the newly installed pod in our project.</p>
+
+<p>Let’s start by import the framework in our class.</p>
+
+<p><code>
+import ILImageEditor
+</code></p>
+
+<p>In the class we initialise the instance of the <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a>.</p>
+
+<p><code>
+var editor = ILImageEditor()
+</code></p>
+
+<p>Now, we can use this singleton to access the editing options provided by the installed framework.</p>
+
+<h4 id="features">Features</h4>
+<ul>
+  <li>Fix orientation.</li>
+  <li>Rotate an image clockwise or anti-clockwise.</li>
+  <li>Mirror an image along horizontal or vertical axis.</li>
+  <li>Compress an image.</li>
+  <li>Resize an image to make it smaller.</li>
+  <li>Crop an image.</li>
+</ul>
+
+<p><strong>First</strong> let’s start by fixing the rotated image orientation that iOS devices usually have upon exporting or uploading the image.</p>
+
+<p><code>
+let imageToFix = UIImage(named: "Sample")
+let fixedImage = editor.fixImageOrientation(imageToFix)
+</code></p>
+
+<p><strong>Second</strong>, we can start performing operations on an image.</p>
+
+<p><code>
+let image = UIImage(named: "Sample")
+let finishedImage = editor.editImageWithOptions(image, withOptions: .rotateClockWise)
+</code></p>
+
+<p>The above code takes an image and image operation as a parameter. So, as we can see we are asking <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a> to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It’s ready for export/upload.</p>
+
+<p>Following are other options for <em>“withOptions”</em> that the above method provides functionality of are:</p>
+
+<p><code>
+.rotateClockWise
+.rotateAntiClockWise
+.flipHorizontal
+.flipVertical
+</code></p>
+
+<p>And I hope the options are self explanatory.</p>
+
+<p><strong>Third</strong>, compress and resize an image to make it smaller in size or quality or both.</p>
+
+<p><code>
+let image = UIImage(named: "Sample")
+let finishedImage = editor.compressImageToSize(image, withSize: .half, compressionQualtity: 1.0)
+</code></p>
+
+<p>Following are other options for <em>“withSize”</em> that resize the image to a smaller size with stated ratio:</p>
+
+<p><code>
+.half
+.oneThird
+.oneFourth
+.oneFifth
+</code></p>
+
+<p><strong>Fourth</strong>, crop an image to some rect.</p>
+
+<p><code>
+let rect = CGRect(x: 0.0, y: 0.0, width: 50.0, height: 100.0)
+let croppedImage = cropAnImageToRect(image, rectToCrop: rect)
+</code></p>
+
+<p>The above function crops the image that lie in the provided rect and returns the cropped image.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter <strong><a href="https://twitter.com/muqtadir_ahmed">@muqtadir_ahmed</a></strong>, or if you find any bugs or crashes please fork my repository at <strong><a href="https://github.com/ill-Logical/ILImageEditor">Github</a></strong> and send raise an issue.</p>
+</h3>
+        </div>
+      </div>
+      
+      
+      <div>
+            
+              <img style="width:10%;height:10%" src="assets/Muqtadir.jpeg"></img>
+            
+            <span class="date">
+              
+              20 Jun 2016
+             
+            </span>
+            <a  target="_blank" href="http://github.com/MuqThe2nd" class="author-link">@MuqThe2nd</a>
+      </div>
+    </div>
+    <br>
+  
+
+    <div class="post">
+      <h1 id="title" >
+        <a title="Bootstrap"  href="/blogs/2016/06/13/bootstrap/">Bootstrap</a>
+      </h1>
+
+      
+      <div class="post-container">                
+        <div class="post-thumb">
+          
              <img id="img1" style="" src="assets/b9.jpg" />
           
         </div> 
@@ -188,7 +327,6 @@ Responsive web design is all about creating web sites which automatically adjust
 Easy to use: Anybody with basic knowledge of HTML and CSS can start using Bootstrap. 
 Responsive features: Bootstrap’s responsive CSS adjusts to phones, tablets, and desktops. 
 Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework.</p>
-
 </h3>
         </div>
       </div>
@@ -196,7 +334,6 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
       
       <div>
             
-
               <img style="width:10%;height:10%" src="assets/Nagaraj.jpg"></img>
             
             <span class="date">
@@ -204,8 +341,7 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
               13 Jun 2016
              
             </span>
-            <a target="_blank" href="http://github.com/Nagarajsk" class="author-link">@Nagarajsk</a>
-
+            <a  target="_blank" href="http://github.com/Nagarajsk" class="author-link">@Nagarajsk</a>
       </div>
     </div>
     <br>
@@ -213,9 +349,7 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
 
     <div class="post">
       <h1 id="title" >
-
-        <a title="Social Login" target="_blank" href="/blogs/2016/05/31/social_login/">Social Login</a>
-
+        <a title="Social Login"  href="/blogs/2016/05/31/social_login/">Social Login</a>
       </h1>
 
       
@@ -276,19 +410,23 @@ Social Login helps in
 
   <div class="recent">
     <p  id="side_title" >
-
-      <a title="Bootstrap" target="_blank" href="/blogs/2016/06/13/bootstrap/">Bootstrap</a>
+      <a title="ILImageEditor tutorial" href="/blogs/2016/06/20/ILImageEditor_tutorials/">ILImageEditor tutorial</a>
       <br>
-      <span class="muted">13 Jun 2016</span>
-
+      <span class="muted">20 Jun 2016</span>
     </p>
   </div>
 
   <div class="recent">
     <p  id="side_title" >
+      <a title="Bootstrap" href="/blogs/2016/06/13/bootstrap/">Bootstrap</a>
+      <br>
+      <span class="muted">13 Jun 2016</span>
+    </p>
+  </div>
 
-      <a title="Social Login" target="_blank" href="/blogs/2016/05/31/social_login/">Social Login</a>
-
+  <div class="recent">
+    <p  id="side_title" >
+      <a title="Social Login" href="/blogs/2016/05/31/social_login/">Social Login</a>
       <br>
       <span class="muted">31 May 2016</span>
     </p>
