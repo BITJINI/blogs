@@ -159,6 +159,77 @@ function showhide()
 
     <div class="post">
       <h1 id="title" >
+        <a title="Shared Preferences"  href="/blogs/2016/06/20/shared_preferences/">Shared Preferences</a>
+      </h1>
+
+      
+      <div class="post-container">                
+        <div class="post-thumb">
+          
+             <img id="img1" style="" src="assets/shared_p.png" />
+          
+        </div> 
+        <div class="post-content">
+            <h3><p>Shared Preferences</p>
+
+<p>Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.</p>
+
+<p>Android stores Shared Preferences settings as XML file in shared_prefs folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
+
+<p>Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.</p>
+
+<p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+Ex: sharedPreferences =getSharedPreferences(VZCARD_PREFS, 0);
+
+</code></pre>
+</div>
+<p>VZCARD_PREFS : name of the file 
+0 : is the operating mode</p>
+
+<p>The first parameter is the key and second parameter is the mode.
+<strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
+editor.putString("token", token));
+editor.commit();
+
+</code></pre>
+</div>
+
+<p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("token")) {
+sharedPreferences.getString("token",””);
+}
+</code></pre>
+</div>
+
+<p>Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.</p>
+
+</h3>
+        </div>
+      </div>
+      
+      
+      <div>
+            
+              <img style="width:10%;height:10%" src="assets/veena.jpg"></img>
+            
+            <span class="date">
+              
+              20 Jun 2016
+             
+            </span>
+            <a  target="_blank" href="http://github.com/veena14cs" class="author-link">@veena14cs</a>
+      </div>
+    </div>
+    <br>
+  
+
+    <div class="post">
+      <h1 id="title" >
         <a title="ILImageEditor tutorial"  href="/blogs/2016/06/20/ILImageEditor_tutorials/">ILImageEditor tutorial</a>
       </h1>
 
@@ -415,6 +486,14 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
 
 <h4>Recent Posts</h4>
 
+
+  <div class="recent">
+    <p  id="side_title" >
+      <a title="Shared Preferences" href="/blogs/2016/06/20/shared_preferences/">Shared Preferences</a>
+      <br>
+      <span class="muted">20 Jun 2016</span>
+    </p>
+  </div>
 
   <div class="recent">
     <p  id="side_title" >

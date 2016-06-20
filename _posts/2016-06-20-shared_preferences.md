@@ -5,8 +5,8 @@ title: Shared Preferences
 summary: Shared Preferences
 author: veena14cs
 profile: https://avatars0.githubusercontent.com/u/16301028?v=3&u=6a8763d83df27dab2bc7f33eed2b6d7805b707b2&s=140"
-image: shared_p.jpg
-user_image: Veena.jpg
+image: shared_p.png
+user_image: veena.jpg
 ---
 
 Shared Preferences
