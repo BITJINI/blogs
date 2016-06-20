@@ -3,7 +3,7 @@ layout: post
 categories: [javascript, backbone, node.js]
 title: ILImageEditor tutorial
 summary: ILImageEditor
-author: MuqThe2nd
+author: ill-Logical
 profile: https://github.com/ill-Logical
 image: ILImageEditor_Blog.png
 user_image: Muqtadir.jpeg
