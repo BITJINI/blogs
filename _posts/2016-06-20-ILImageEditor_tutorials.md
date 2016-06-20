@@ -7,7 +7,6 @@ author: MuqThe2nd
 profile: https://github.com/ill-Logical
 image: ILImageEditor_Blog.png
 user_image: Muqtadir.jpeg
-
 ---
 
 #ILImageEditor
