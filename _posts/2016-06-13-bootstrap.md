@@ -5,7 +5,7 @@ title: Bootstrap
 summary: bootstrap
 author: Nagarajsk
 profile: https://avatars3.githubusercontent.com/u/15975817?v=3&s=460
-image: b9.jpg
+image: bt_image.jpg
 user_image: Nagaraj.jpg
 ---
 
