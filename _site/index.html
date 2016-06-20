@@ -174,25 +174,27 @@ function showhide()
 
 <p>Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.</p>
 
-<p>Android stores Shared Preferences settings as XML file in shared_prefs folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
+<p>Android stores Shared Preferences settings as XML file in <strong>shared_prefs</strong> folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
 
 <p>Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.</p>
 
 <p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
-Ex: sharedPreferences =getSharedPreferences(VZCARD_PREFS, 0);
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences **sharedPreferences** = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+Ex: **sharedPreferences** =getSharedPreferences(MY_PREFS, 0);
 
 </code></pre>
 </div>
-<p>VZCARD_PREFS : name of the file 
+<p>MY_PREFS : name of the file 
 0 : is the operating mode</p>
 
 <p>The first parameter is the key and second parameter is the mode.
 <strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString("token", token));
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = **sharedPreferences**.edit();
+editor.putString("name", sName));
+editor.putString("password", sPassword));
+
 editor.commit();
 
 </code></pre>
@@ -200,8 +202,11 @@ editor.commit();
 
 <p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("token")) {
-sharedPreferences.getString("token",””);
+<div class="highlighter-rouge"><pre class="highlight"><code>if (**sharedpreferences**.contains("name")) {
+**sharedPreferences**.getString("name",””);
+}
+if (**sharedpreferences**.contains("password")) {
+**sharedPreferences**.getString("password",””);
 }
 </code></pre>
 </div>
@@ -223,6 +228,74 @@ sharedPreferences.getString("token",””);
              
             </span>
             <a  target="_blank" href="http://github.com/veena14cs" class="author-link">@veena14cs</a>
+      </div>
+    </div>
+    <br>
+  
+
+    <div class="post">
+      <h1 id="title" >
+        <a title="Recycler View"  href="/blogs/2016/06/20/recycler_view/">Recycler View</a>
+      </h1>
+
+      
+      <div class="post-container">                
+        <div class="post-thumb">
+          
+             <img id="img1" style="" src="assets/recycler.jpg" />
+          
+        </div> 
+        <div class="post-content">
+            <h3><p>As I am working on Collage of an images, so need to be comfortable with</p>
+
+<p>-RecyclerView</p>
+
+<p>-GridLayoutManager</p>
+
+<p><strong>RecyclerView: What it is?</strong></p>
+
+<p>The RecyclerView has been developed with extensibility in mind. It is new ViewGroup that is prepared to render any adapter-based view in an similar way. It is supossed to be the successor of ListView and GridView, and it can be found in the latest support-v7 version, and to know more https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html.</p>
+
+<p><strong>GridLayoutManager:</strong></p>
+
+<p>GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
+	mRecyclerView.setLayoutManager(mLayoutManager);
+
+	mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+        @Override
+        public int getSpanSize(int position) {
+		if (position == 0 || position == 6) {
+                    return 3; // ITEMS AT POSITION 1 AND 6 OCCUPY 2 SPACES
+                } else {
+                    return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
+                }
+            }
+        });
+
+</code></pre>
+</div>
+
+<p>you can change count of spaces on each position according to your needs. To know more https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html</p>
+
+<p>If any issues, you can check my github repository at https://github.com/Shradha953/RecyclerView</p>
+
+</h3>
+        </div>
+      </div>
+      
+      
+      <div>
+            
+              <img style="width:10%;height:10%" src="assets/Shradha.jpg"></img>
+            
+            <span class="date">
+              
+              20 Jun 2016
+             
+            </span>
+            <a  target="_blank" href="http://github.com/Shradha953" class="author-link">@Shradha953</a>
       </div>
     </div>
     <br>
@@ -490,6 +563,14 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
   <div class="recent">
     <p  id="side_title" >
       <a title="Shared Preferences" href="/blogs/2016/06/20/shared_preferences/">Shared Preferences</a>
+      <br>
+      <span class="muted">20 Jun 2016</span>
+    </p>
+  </div>
+
+  <div class="recent">
+    <p  id="side_title" >
+      <a title="Recycler View" href="/blogs/2016/06/20/recycler_view/">Recycler View</a>
       <br>
       <span class="muted">20 Jun 2016</span>
     </p>

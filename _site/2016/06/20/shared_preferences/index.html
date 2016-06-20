@@ -163,25 +163,27 @@ function showhide()
 
 <p>Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.</p>
 
-<p>Android stores Shared Preferences settings as XML file in shared_prefs folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
+<p>Android stores Shared Preferences settings as XML file in <strong>shared_prefs</strong> folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
 
 <p>Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.</p>
 
 <p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
-Ex: sharedPreferences =getSharedPreferences(VZCARD_PREFS, 0);
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences **sharedPreferences** = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+Ex: **sharedPreferences** =getSharedPreferences(MY_PREFS, 0);
 
 </code></pre>
 </div>
-<p>VZCARD_PREFS : name of the file 
+<p>MY_PREFS : name of the file 
 0 : is the operating mode</p>
 
 <p>The first parameter is the key and second parameter is the mode.
 <strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString("token", token));
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = **sharedPreferences**.edit();
+editor.putString("name", sName));
+editor.putString("password", sPassword));
+
 editor.commit();
 
 </code></pre>
@@ -189,8 +191,11 @@ editor.commit();
 
 <p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("token")) {
-sharedPreferences.getString("token",””);
+<div class="highlighter-rouge"><pre class="highlight"><code>if (**sharedpreferences**.contains("name")) {
+**sharedPreferences**.getString("name",””);
+}
+if (**sharedpreferences**.contains("password")) {
+**sharedPreferences**.getString("password",””);
 }
 </code></pre>
 </div>
@@ -219,6 +224,8 @@ sharedPreferences.getString("token",””);
 <!-- <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
+    
+      <li><span class="date">20 Jun 2016</span> &nbsp;&raquo;&nbsp; <a title="Recycler View" href="/blogs/2016/06/20/recycler_view/">Recycler View</a></li>
     
       <li><span class="date">20 Jun 2016</span> &nbsp;&raquo;&nbsp; <a title="ILImageEditor tutorial" href="/blogs/2016/06/20/ILImageEditor_tutorials/">ILImageEditor tutorial</a></li>
     
@@ -259,6 +266,14 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
   <div class="recent">
     <p  id="side_title" >
       <a title="Shared Preferences" href="/blogs/2016/06/20/shared_preferences/">Shared Preferences</a>
+      <br>
+      <span class="muted">20 Jun 2016</span>
+    </p>
+  </div>
+
+  <div class="recent">
+    <p  id="side_title" >
+      <a title="Recycler View" href="/blogs/2016/06/20/recycler_view/">Recycler View</a>
       <br>
       <span class="muted">20 Jun 2016</span>
     </p>
