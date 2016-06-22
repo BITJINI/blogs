@@ -17,7 +17,7 @@ As I am working on Collage of an images, so need to be comfortable with
 
 **RecyclerView: What it is?**
 
-The RecyclerView has been developed with extensibility in mind. It is new ViewGroup that is prepared to render any adapter-based view in an similar way. It is supossed to be the successor of ListView and GridView, and it can be found in the latest support-v7 version, and to know more https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html.
+The RecyclerView has been developed with extensibility in mind. It is new ViewGroup that is prepared to render any adapter-based view in an similar way. It is supossed to be the successor of ListView and GridView, and it can be found in the latest support-v7 version, and **[to know more](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html)**.
 
 **GridLayoutManager:**
 
@@ -41,8 +41,8 @@ mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
 
 ````````
 
-you can change count of spaces on each position according to your needs. To know more https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html
+you can change count of spaces on each position according to your needs. **[To know more](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html)**
 
-If any issues, you can check my github repository at https://github.com/Shradha953/RecyclerView
+If any issues, you can check my github **[repository](https://github.com/Shradha953/RecyclerView)**
 
 
