@@ -100,14 +100,6 @@ h3 {
 }
 
 
-
-
-.span4 {
-  width: 300px;
-  margin-left: 14%;
-}
-
-
 #img1{
 
   width:350px;height:350px;
@@ -132,9 +124,50 @@ div.inline { float:left; }
     overflow: auto;
 }
 
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+}
+.row{margin-right:-15px;margin-left:135px}
+
 /*Smaller screens responsive*/
 
-@media (max-width:700px) { 
+@media (max-width:1300px){
+
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:123px}
+}
+
+@media (max-width:1200px){
+
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:123px}
+}
+
+
+
+@media (max-width:1199px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 14%;
+}
+.row{margin-right:-15px;
+  margin-left:-15px}
+}
+
+
+
         #img1{
 
           width:120px !important;
