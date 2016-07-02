@@ -409,6 +409,11 @@ div.inline { float:left; }
         #title{
           font-size: 20px !important;
         }
+         #title a{
+          margin-left:-33px;
+        }
+
+
         h3{
           font-size: 13px !important;
         }
@@ -431,6 +436,9 @@ div.inline { float:left; }
             font-size: 10px;
         }
        
+         #title a{
+          margin-left:-133px;
+        }
 
 
         #img2{
@@ -456,7 +464,9 @@ div.inline { float:left; }
             font-size: 10px;
         }
        
-    
+         #title a{
+          margin-left:-251px;
+        }
 
 
         #img2{
@@ -483,7 +493,9 @@ div.inline { float:left; }
             font-size: 10px;
         }
      
-
+        #title a{
+          margin-left:-339px;
+        }
 
         #img2{
           width:200px !important;
