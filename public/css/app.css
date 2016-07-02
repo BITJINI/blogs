@@ -509,6 +509,15 @@ div.inline { float:left; }
 
 
 
+#title a:hover,#title a:focus,#title a:visited{
+  /*color: black;*/
+  text-decoration: underline; !important;
+}
+#title a:hover,#title a:focus{
+  /*color: black;*/
+  color: #5ECC11;
+  
+}
 
 a:hover,
 a:focus,
@@ -519,7 +528,7 @@ a:visited {
 
 a:hover,
 a:focus{
-  color: #3197FF;
+  color: #5ECC11;
   
 }
 
