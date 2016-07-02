@@ -173,37 +173,37 @@ function showhide()
 
 <p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
 
-<p>````````
-SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);      <br />
-Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
 
-<p>````````
-MY_PREFS : name of the file 
+</code></pre>
+</div>
+<p>MY_PREFS : name of the file 
 0 : is the operating mode</p>
 
 <p>The first parameter is the key and second parameter is the mode.</p>
 
 <p><strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
 
-<p>````````
-SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString(“name”, sName));
-editor.putString(“password”, sPassword));</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
+editor.putString("name", sName));
+editor.putString("password", sPassword));
 
-<p>editor.commit();</p>
+editor.commit();
 
-<p>````````</p>
+</code></pre>
+</div>
 
 <p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
 
-<p><code>
-if (sharedpreferences.contains("name")) {
+<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("name")) {
   sharedPreferences.getString("name",””);
 }
 if (sharedpreferences.contains("password")) {
   sharedPreferences.getString("password",””);
 }
-</code></p>
+</code></pre>
+</div>
 
 <p>Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.</p>
 

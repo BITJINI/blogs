@@ -177,11 +177,10 @@ function showhide()
 
 <p>GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:</p>
 
-<p>````````
-GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
-mRecyclerView.setLayoutManager(mLayoutManager);</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
+mRecyclerView.setLayoutManager(mLayoutManager);
 
-<p>mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
     @Override
     public int getSpanSize(int position) {
 	if (position == 0 || position == 6) {
@@ -190,9 +189,10 @@ mRecyclerView.setLayoutManager(mLayoutManager);</p>
                 return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
             }
         }
-    });</p>
+    });
 
-<p>````````</p>
+</code></pre>
+</div>
 
 <p>you can change count of spaces on each position according to your needs. <strong><a href="https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html">To know more</a></strong></p>
 

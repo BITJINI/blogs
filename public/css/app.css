@@ -103,16 +103,16 @@ h3 {
 
 #img1{
 
-  width:350px;height:350px;
+  width:150px;height:150px;
   object-fit: contain;
 }
 
 #img2{
 
-  width:400px;height:400px;
+  width:200px;height:200px;
    object-fit: contain;
   vertical-align: center;
-  margin-left: 17%;
+  margin-left: 34%;
 }
 
 div.inline { float:left; }

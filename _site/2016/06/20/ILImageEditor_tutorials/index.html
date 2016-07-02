@@ -171,39 +171,39 @@ function showhide()
 
 <p>Ok, so to start the tutorial we’ll just install the pod by adding the following line to our Podfile.</p>
 
-<p>````````
-platform :ios, ‘8.0’</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>platform :ios, '8.0'
 
-<p>target ‘MyProjectName’ do
+target 'MyProjectName' do
   use_frameworks!
-  pod ‘ILImageEditor’</p>
+  pod 'ILImageEditor'
 
-<p>end
-````````
-If you haven’t initialised the pod yet then just type</p>
+end
+</code></pre>
+</div>
+<p>If you haven’t initialised the pod yet then just type</p>
 
-<p><code>
-pod init
-</code>
-and install the pod.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>pod init
+</code></pre>
+</div>
+<p>and install the pod.</p>
 
-<p><code>
-pod install
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>pod install
+</code></pre>
+</div>
 
 <p>Now we’re all set to use the newly installed pod in our project.</p>
 
 <p>Let’s start by import the framework in our class.</p>
 
-<p><code>
-import ILImageEditor
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>import ILImageEditor
+</code></pre>
+</div>
 
 <p>In the class we initialise the instance of the <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a>.</p>
 
-<p><code>
-var editor = ILImageEditor()
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>var editor = ILImageEditor()
+</code></pre>
+</div>
 
 <p>Now, we can use this singleton to access the editing options provided by the installed framework.</p>
 
@@ -217,53 +217,53 @@ var editor = ILImageEditor()
 
 <p><strong>First</strong> let’s start by fixing the rotated image orientation that iOS devices usually have upon exporting or uploading the image.</p>
 
-<p><code>
-let imageToFix = UIImage(named: "Sample")
+<div class="highlighter-rouge"><pre class="highlight"><code>let imageToFix = UIImage(named: "Sample")
 let fixedImage = editor.fixImageOrientation(imageToFix)
-</code></p>
+</code></pre>
+</div>
 
 <p><strong>Second</strong>, we can start performing operations on an image.</p>
 
-<p><code>
-let image = UIImage(named: "Sample")
+<div class="highlighter-rouge"><pre class="highlight"><code>let image = UIImage(named: "Sample")
 let finishedImage = editor.editImageWithOptions(image, withOptions: .rotateClockWise)
-</code></p>
+</code></pre>
+</div>
 
 <p>The above code takes an image and image operation as a parameter. So, as we can see we are asking <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a> to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It’s ready for export/upload.</p>
 
 <p>Following are other options for <em>“withOptions”</em> that the above method provides functionality of are:</p>
 
-<p><code>
-.rotateClockWise
+<div class="highlighter-rouge"><pre class="highlight"><code>.rotateClockWise
 .rotateAntiClockWise
 .flipHorizontal
 .flipVertical
-</code></p>
+</code></pre>
+</div>
 
 <p>And I hope the options are self explanatory.</p>
 
 <p><strong>Third</strong>, compress and resize an image to make it smaller in size or quality or both.</p>
 
-<p><code>
-let image = UIImage(named: "Sample")
+<div class="highlighter-rouge"><pre class="highlight"><code>let image = UIImage(named: "Sample")
 let finishedImage = editor.compressImageToSize(image, withSize: .half, compressionQualtity: 1.0)
-</code></p>
+</code></pre>
+</div>
 
 <p>Following are other options for <em>“withSize”</em> that resize the image to a smaller size with stated ratio:</p>
 
-<p><code>
-.half
+<div class="highlighter-rouge"><pre class="highlight"><code>.half
 .oneThird
 .oneFourth
 .oneFifth
-</code></p>
+</code></pre>
+</div>
 
 <p><strong>Fourth</strong>, crop an image to some rect.</p>
 
-<p><code>
-let rect = CGRect(x: 0.0, y: 0.0, width: 50.0, height: 100.0)
+<div class="highlighter-rouge"><pre class="highlight"><code>let rect = CGRect(x: 0.0, y: 0.0, width: 50.0, height: 100.0)
 let croppedImage = cropAnImageToRect(image, rectToCrop: rect)
-</code></p>
+</code></pre>
+</div>
 
 <p>The above function crops the image that lie in the provided rect and returns the cropped image.</p>
 
