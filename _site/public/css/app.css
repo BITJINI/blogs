@@ -1,5 +1,5 @@
 
-
+@import url('fonts.css');
 .navbar-default{
   border: transparent !important;
 
@@ -13,10 +13,7 @@ body, html {
    width:100%;
 }
 
-@font-face {
-  font-family: Roboto-Regular;
-  src: url(/blogs/public/css/Roboto-Regular.ttf);
-}
+
 @font-face {
   font-family: Roboto-Light;
   src: url(/blogs/public/css/Roboto-Medium.ttf);
@@ -29,17 +26,28 @@ body, html {
 h4{
   font-family: Roboto-Regular !important;
 }
-h3 {
-  font-family: Roboto-Regular !important;
+
+
+a{
+  color: #E84B5D;
 }
+
+
+#title a{
+  font-size: 26px;
+    color: #E84B5D;
+    margin-top: 97%;
+    font-family: Roboto-CondensedItalic;
+    letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+
 #side_title{
   font-family: Roboto-Regular !important;
 }
-
-#title{
-  font-family: Roboto-Regular !important;
-}
-
 
 #bit_blog{
   font-family: Respective-Regular !important;
@@ -83,6 +91,10 @@ h3 {
    margin-right: 7%;
   /*  margin-left: 220px*/
   font-size: 14px !important;
+    color: gray !important;
+    font-family: Roboto-Regular !important;
+    letter-spacing: 0.5px !important;
+    line-height: 20px !important;
 }
 #side_title{
   text-align:left;
@@ -95,8 +107,11 @@ h3 {
   padding-bottom: 8px;
   margin-top:1%;
   border-bottom: 1px solid #CFCFCF;
-  font-size: 29px !important;
-  color:black;
+
+    font-size: 26px;
+    color: #E84B5D !important;
+    font-family: Roboto-CondensedItalic;
+    letter-spacing: 2px;
   /*font-weight: bold;*/
 }
 
@@ -305,7 +320,7 @@ div.inline { float:left; }
 
 .span4 {
   width: 300px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .row{margin-right:-15px;
   margin-left:18px;margin-top: 0%}
@@ -316,7 +331,7 @@ div.inline { float:left; }
 
 .span4 {
   width: 300px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .row{margin-right:-15px;
   margin-left:10px;margin-top: 0%}
@@ -327,7 +342,7 @@ div.inline { float:left; }
 
 .span4 {
   width: 300px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .row{margin-right:-15px;
   margin-left:-9px;margin-top: 0%}
@@ -337,7 +352,7 @@ div.inline { float:left; }
 
 .span4 {
   width: 300px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .row{margin-right:-15px;
   margin-left:9px;margin-top: 0%}
@@ -347,7 +362,7 @@ div.inline { float:left; }
 
 .span4 {
   width: 300px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .row{margin-right:-15px;
   margin-left:-8px;margin-top: 0%}
@@ -357,7 +372,7 @@ div.inline { float:left; }
 
 .span4 {
   width: 300px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .row{margin-right:-15px;
   margin-left:-12px;margin-top: 0%}
@@ -380,17 +395,12 @@ div.inline { float:left; }
             margin-right: 4%;
             font-size: 10px;
         }
-        a{
-          margin-right: 2%;
-        }
-  
+       
 
         #img2{
           width:200px !important;
         }
-        .title{
-          margin-left: -2%;
-        }
+       
         #con{
           font-size: 10px !important;
           margin-right: 3% !important;
@@ -420,18 +430,13 @@ div.inline { float:left; }
             margin-right: 20%;
             font-size: 10px;
         }
-        a{
-          margin-right: 18%;
-        }
-     
+       
 
 
         #img2{
           width:200px !important;
         }
-        .title{
-          margin-left: -20%;
-        }
+        
         #con{
           font-size: 10px !important;
           margin-right: 20% !important;
@@ -450,18 +455,14 @@ div.inline { float:left; }
             margin-right: 40%;
             font-size: 10px;
         }
-        a{
-          margin-right: 33%;
-        }
+       
     
 
 
         #img2{
           width:200px !important;
         }
-        .title{
-          margin-left: -34%;
-        }
+        
         #con{
           font-size: 10px !important;
           margin-right: 41% !important;
@@ -481,18 +482,13 @@ div.inline { float:left; }
             margin-right: 55%;
             font-size: 10px;
         }
-        a{
-          margin-right: 55%;
-        }
      
 
 
         #img2{
           width:200px !important;
         }
-        .title{
-          margin-left: -55%;
-        }
+     
         #con{
           font-size: 14px !important;
           margin-right: 58% !important;
@@ -501,12 +497,6 @@ div.inline { float:left; }
 
 
 
-
-
-a {
-  color: black;
-  text-decoration: none;
-}
 
 a:hover,
 a:focus,
