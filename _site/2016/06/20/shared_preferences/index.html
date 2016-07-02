@@ -159,49 +159,51 @@ function showhide()
           
         <!-- </div> 
         <div class="post-content"> -->
-            <h3 id="con"><p>Shared Preferences</p>
+            <h3 id="con">Shared Preferences
 
-<p>Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.</p>
+Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.
 
-<p>Android stores Shared Preferences settings as XML file in <strong>shared_prefs</strong> folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
+Android stores Shared Preferences settings as XML file in **shared_prefs** folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().
 
-<p>Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.</p>
+Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.
 
-<p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
+**Step 1**:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
+
+````````
+SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
 Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
 
-</code></pre>
-</div>
-<p>MY_PREFS : name of the file 
-0 : is the operating mode</p>
+````````
+MY_PREFS : name of the file 
+0 : is the operating mode
 
-<p>The first parameter is the key and second parameter is the mode.</p>
+The first parameter is the key and second parameter is the mode.
 
-<p><strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
+**Step 2**:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
+
+````````
+SharedPreferences.Editor editor = sharedPreferences.edit();
 editor.putString("name", sName));
 editor.putString("password", sPassword));
 
 editor.commit();
 
-</code></pre>
-</div>
+````````
 
-<p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
+**Step 3**:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("name")) {
+````````
+if (sharedpreferences.contains("name")) {
   sharedPreferences.getString("name",””);
 }
 if (sharedpreferences.contains("password")) {
   sharedPreferences.getString("password",””);
 }
-</code></pre>
-</div>
+````````
 
-<p>Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.</p>
+Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.
 
 </h3>
         <!-- </div>
