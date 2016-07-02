@@ -313,6 +313,16 @@ div.inline { float:left; }
 
 }
 
+@media (max-width:414px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:-9px;margin-top: 0%}
+}
+
 @media (max-width:400px) { 
 
 .span4 {
@@ -320,7 +330,7 @@ div.inline { float:left; }
   margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:-4px;margin-top: 0%}
+  margin-left:9px;margin-top: 0%}
 }
 
 @media (max-width:340px) { 

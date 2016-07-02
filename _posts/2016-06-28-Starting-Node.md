@@ -23,10 +23,10 @@ brew install node
 ``` 
 and in ubuntu use:
 
-```
+
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
-```
+
 Once you have, to see if Node is installed, type `node -v` in Terminal. This should print the version number so you’ll see something like this `v5.10.0`
 
 And if you are a windows user, you can simply download the [Windows Installer](http://nodejs.org/#download) directly from the [official web site](https://nodejs.org/).
@@ -61,10 +61,9 @@ node getting-started.js
 Here, "getting-started.js" is the name with which I have saved my the file.
 It should output something like this:
 
-```
-> node getting-started.js 
+node getting-started.js 
 Http server started
-```
+
 
 Now, if we just go to the browser and open the `http://localhost:3000/` we should be able to see a JSON object object is returned.
 
