@@ -125,10 +125,21 @@ div.inline { float:left; }
     overflow: auto;
 }
 
+
+@media (max-width:2500px){
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+  margin-top: -2.9% !important;
+}
+.row{margin-right:-82px;margin-left:85px;margin-top: 4%}
+}
+
 @media (max-width:1800px){
 .span4 {
   width: 300px;
   margin-left: 4%;
+  margin-top: -2.9% !important;
 }
 .row{margin-right:-82px;margin-left:85px;margin-top: 4%}
 }
