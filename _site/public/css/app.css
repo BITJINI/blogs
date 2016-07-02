@@ -128,7 +128,7 @@ div.inline { float:left; }
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-15px;margin-left:135px}
+.row{margin-right:-15px;margin-left:141px;margin-top: 4%}
 
 /*Smaller screens responsive*/
 
@@ -151,12 +151,12 @@ div.inline { float:left; }
   margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:123px}
+  margin-left:123px;margin-top: 0%}
 }
 
 
 
-@media (max-width:1199px) { 
+@media (max-width:1000px) { 
 
 .span4 {
   width: 300px;

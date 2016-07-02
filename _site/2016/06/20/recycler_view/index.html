@@ -159,21 +159,23 @@ function showhide()
           
         <!-- </div> 
         <div class="post-content"> -->
-            <h3 id="con"><p>As I am working on Collage of an images, so need to be comfortable with</p>
+            <h3 id="con">As I am working on Collage of an images, so need to be comfortable with
 
-<p>-RecyclerView</p>
+-RecyclerView
 
-<p>-GridLayoutManager</p>
+-GridLayoutManager
 
-<p><strong>RecyclerView: What it is?</strong></p>
+**RecyclerView: What it is?**
 
-<p>The RecyclerView has been developed with extensibility in mind. It is new ViewGroup that is prepared to render any adapter-based view in an similar way. It is supossed to be the successor of ListView and GridView, and it can be found in the latest support-v7 version, and <strong><a href="https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html">to know more</a></strong>.</p>
+The RecyclerView has been developed with extensibility in mind. It is new ViewGroup that is prepared to render any adapter-based view in an similar way. It is supossed to be the successor of ListView and GridView, and it can be found in the latest support-v7 version, and **[to know more](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html)**.
 
-<p><strong>GridLayoutManager:</strong></p>
+**GridLayoutManager:**
 
-<p>GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:</p>
+GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:
 
-<div class="highlighter-rouge"><pre class="highlight"><code>GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
+
+````````
+GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
 mRecyclerView.setLayoutManager(mLayoutManager);
 
 mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
@@ -187,12 +189,12 @@ mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
         }
     });
 
-</code></pre>
-</div>
+````````
 
-<p>you can change count of spaces on each position according to your needs. <strong><a href="https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html">To know more</a></strong></p>
+you can change count of spaces on each position according to your needs. **[To know more](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html)**
 
-<p>If any issues, you can check my github <strong><a href="https://github.com/Shradha953/RecyclerView">repository</a></strong></p>
+If any issues, you can check my github **[repository](https://github.com/Shradha953/RecyclerView)**
+
 
 </h3>
         <!-- </div>

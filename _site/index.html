@@ -16,7 +16,7 @@
     <meta property="og:type" content="blog"/>
     <meta property="og:site_name" content="Changer.nl"/>
     <meta property="og:description" content="Writings about javascript, node.js, mongodb, backbone.js, python, .net and everything else in the world." />
-    <meta property="og:url" content="http://changer.nl/devlog/" />
+    <meta property="og:url" content="http://changer.nl/devlog/index.html" />
     <meta property="og:image" content="http://changer.nl/devlog/public/logo.png" />
 
     <!-- CSS -->
@@ -149,7 +149,7 @@ function showhide()
 </p> -->
 <html>
 <body style="">
-<div class="blog-description">
+<div class="blog-description" style="">
   <!-- <h2>Developer blog</h2> -->
 </div>
 
@@ -174,65 +174,65 @@ function showhide()
 
 <p>So, if you are a JavaScript enthusiast and want to try server side coding as well then here is the thing for you my friend.</p>
 
-<p>###Setting Up
-For short NodeJS is Javascript running outside the browser, in this case in the server.
+<h3 id="setting-up">Setting Up</h3>
+<p>For short NodeJS is Javascript running outside the browser, in this case in the server.
 ####Installation
 To install it, you can go to <a href="https://nodejs.org/">NodeJS Website</a>. But if you are using Mac and brew you can do:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>brew install node
-</code></pre>
-</div>
-<p>and in ubuntu use:</p>
+<p><code>
+brew install node
+</code> 
+and in ubuntu use:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+<p><code>
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
-</code></pre>
-</div>
-<p>Once you have, to see if Node is installed, type <code class="highlighter-rouge">node -v</code> in Terminal. This should print the version number so you’ll see something like this <code class="highlighter-rouge">v5.10.0</code></p>
+</code>
+Once you have, to see if Node is installed, type <code>node -v</code> in Terminal. This should print the version number so you’ll see something like this <code>v5.10.0</code></p>
 
 <p>And if you are a windows user, you can simply download the <a href="http://nodejs.org/#download">Windows Installer</a> directly from the <a href="https://nodejs.org/">official web site</a>.</p>
 
-<p>#####We’re all set to write our first server program! Wasn’t that easy :)</p>
+<h5 id="were-all-set-to-write-our-first-server-program-wasnt-that-easy-">We’re all set to write our first server program! Wasn’t that easy :)</h5>
 
-<p>###Hello Server</p>
+<h3 id="hello-server">Hello Server</h3>
 
 <p>Okay so let’s start by opening your favourite text editor in my case I am using <a href="https://www.sublimetext.com/3">Sublime Text 3</a>, and creating a new file with a “.js” extension. Ex: “getting-started.js”, and in here we write our very own server:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>//Initialise http package built in to Node.js library to make http request.
-var http = require('http');
+<p>```
+//Initialise http package built in to Node.js library to make http request.
+var http = require(‘http’);</p>
 
-//This simple code as states 'creates' server, returns a JSON object. 
+<p>//This simple code as states ‘creates’ server, returns a JSON object. 
 var server = http.createServer( function (request, response) {
-	response.writeHead(200, { 'content-type' : 'application/json'});
-	response.end(JSON.stringify({hello: 'Server'}));
-});
+	response.writeHead(200, { ‘content-type’ : ‘application/json’});
+	response.end(JSON.stringify({hello: ‘Server’}));
+});</p>
 
-//We configure the server to listen to port: 3000
-server.listen(3000);
+<p>//We configure the server to listen to port: 3000
+server.listen(3000);</p>
 
-console.log("Http server started");
-</code></pre>
-</div>
+<p>console.log(“Http server started”);
+```</p>
 
 <p>Once we have the above code in our JavaScript file, we can simply run it from the terminal,</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>node getting-started.js
-</code></pre>
-</div>
-<p>Here, “getting-started.js” is the name with which I have saved my the file.
+<p><code>
+node getting-started.js
+</code>
+Here, “getting-started.js” is the name with which I have saved my the file.
 It should output something like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; node getting-started.js 
+<p><code>
+&gt; node getting-started.js 
 Http server started
-</code></pre>
-</div>
+</code></p>
 
-<p>Now, if we just go to the browser and open the <code class="highlighter-rouge">http://localhost:3000/</code> we should be able to see a JSON object object is returned.</p>
+<p>Now, if we just go to the browser and open the <code>http://localhost:3000/</code> we should be able to see a JSON object object is returned.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="nt">"hello"</span><span class="p">:</span><span class="s2">"Server"</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
-<p>Is it working? Cool, you have embarked upon the wonderful world of Node.js! Is NOT working? take a look at the <a href="https://gist.github.com/MuqThe2nd/80573ee207205148ab401e4655054e24">code</a>.</p>
+<p><code>
+{"hello":"Server"}
+</code>
+Is it working? Cool, you have embarked upon the wonderful world of Node.js! Is NOT working? take a look at the <a href="https://gist.github.com/MuqThe2nd/80573ee207205148ab401e4655054e24">code</a>.</p>
 
 </h3>
         </div>
@@ -321,37 +321,37 @@ UICollectionViewCell – these cells make up the content of the view and are add
 
 <p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
-Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
+<p>````````
+SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);      <br />
+Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);</p>
 
-</code></pre>
-</div>
-<p>MY_PREFS : name of the file 
+<p>````````
+MY_PREFS : name of the file 
 0 : is the operating mode</p>
 
 <p>The first parameter is the key and second parameter is the mode.</p>
 
 <p><strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString("name", sName));
-editor.putString("password", sPassword));
+<p>````````
+SharedPreferences.Editor editor = sharedPreferences.edit();
+editor.putString(“name”, sName));
+editor.putString(“password”, sPassword));</p>
 
-editor.commit();
+<p>editor.commit();</p>
 
-</code></pre>
-</div>
+<p>````````</p>
 
 <p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("name")) {
+<p><code>
+if (sharedpreferences.contains("name")) {
   sharedPreferences.getString("name",””);
 }
 if (sharedpreferences.contains("password")) {
   sharedPreferences.getString("password",””);
 }
-</code></pre>
-</div>
+</code></p>
 
 <p>Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.</p>
 
@@ -402,10 +402,11 @@ if (sharedpreferences.contains("password")) {
 
 <p>GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
-mRecyclerView.setLayoutManager(mLayoutManager);
+<p>````````
+GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
+mRecyclerView.setLayoutManager(mLayoutManager);</p>
 
-mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+<p>mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
     @Override
     public int getSpanSize(int position) {
 	if (position == 0 || position == 6) {
@@ -414,10 +415,9 @@ mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
                 return 1; // OTHER ITEMS OCCUPY ONLY A SINGLE SPACE
             }
         }
-    });
+    });</p>
 
-</code></pre>
-</div>
+<p>````````</p>
 
 <p>you can change count of spaces on each position according to your needs. <strong><a href="https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html">To know more</a></strong></p>
 
@@ -464,39 +464,39 @@ mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
 
 <p>Ok, so to start the tutorial we’ll just install the pod by adding the following line to our Podfile.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>platform :ios, '8.0'
+<p>````````
+platform :ios, ‘8.0’</p>
 
-target 'MyProjectName' do
+<p>target ‘MyProjectName’ do
   use_frameworks!
-  pod 'ILImageEditor'
+  pod ‘ILImageEditor’</p>
 
-end
-</code></pre>
-</div>
-<p>If you haven’t initialised the pod yet then just type</p>
+<p>end
+````````
+If you haven’t initialised the pod yet then just type</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pod init
-</code></pre>
-</div>
-<p>and install the pod.</p>
+<p><code>
+pod init
+</code>
+and install the pod.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pod install
-</code></pre>
-</div>
+<p><code>
+pod install
+</code></p>
 
 <p>Now we’re all set to use the newly installed pod in our project.</p>
 
 <p>Let’s start by import the framework in our class.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>import ILImageEditor
-</code></pre>
-</div>
+<p><code>
+import ILImageEditor
+</code></p>
 
 <p>In the class we initialise the instance of the <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var editor = ILImageEditor()
-</code></pre>
-</div>
+<p><code>
+var editor = ILImageEditor()
+</code></p>
 
 <p>Now, we can use this singleton to access the editing options provided by the installed framework.</p>
 
@@ -510,53 +510,53 @@ end
 
 <p><strong>First</strong> let’s start by fixing the rotated image orientation that iOS devices usually have upon exporting or uploading the image.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>let imageToFix = UIImage(named: "Sample")
+<p><code>
+let imageToFix = UIImage(named: "Sample")
 let fixedImage = editor.fixImageOrientation(imageToFix)
-</code></pre>
-</div>
+</code></p>
 
 <p><strong>Second</strong>, we can start performing operations on an image.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>let image = UIImage(named: "Sample")
+<p><code>
+let image = UIImage(named: "Sample")
 let finishedImage = editor.editImageWithOptions(image, withOptions: .rotateClockWise)
-</code></pre>
-</div>
+</code></p>
 
 <p>The above code takes an image and image operation as a parameter. So, as we can see we are asking <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a> to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It’s ready for export/upload.</p>
 
 <p>Following are other options for <em>“withOptions”</em> that the above method provides functionality of are:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.rotateClockWise
+<p><code>
+.rotateClockWise
 .rotateAntiClockWise
 .flipHorizontal
 .flipVertical
-</code></pre>
-</div>
+</code></p>
 
 <p>And I hope the options are self explanatory.</p>
 
 <p><strong>Third</strong>, compress and resize an image to make it smaller in size or quality or both.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>let image = UIImage(named: "Sample")
+<p><code>
+let image = UIImage(named: "Sample")
 let finishedImage = editor.compressImageToSize(image, withSize: .half, compressionQualtity: 1.0)
-</code></pre>
-</div>
+</code></p>
 
 <p>Following are other options for <em>“withSize”</em> that resize the image to a smaller size with stated ratio:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.half
+<p><code>
+.half
 .oneThird
 .oneFourth
 .oneFifth
-</code></pre>
-</div>
+</code></p>
 
 <p><strong>Fourth</strong>, crop an image to some rect.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>let rect = CGRect(x: 0.0, y: 0.0, width: 50.0, height: 100.0)
+<p><code>
+let rect = CGRect(x: 0.0, y: 0.0, width: 50.0, height: 100.0)
 let croppedImage = cropAnImageToRect(image, rectToCrop: rect)
-</code></pre>
-</div>
+</code></p>
 
 <p>The above function crops the image that lie in the provided rect and returns the cropped image.</p>
 

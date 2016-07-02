@@ -159,35 +159,36 @@ function showhide()
           
         <!-- </div> 
         <div class="post-content"> -->
-            <h3 id="con"><p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world, as stated by the <a href="https://nodejs.org/">official website</a>.</p>
+            <h3 id="con">Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world, as stated by the [official website](https://nodejs.org/).
 
-<p>So, if you are a JavaScript enthusiast and want to try server side coding as well then here is the thing for you my friend.</p>
+So, if you are a JavaScript enthusiast and want to try server side coding as well then here is the thing for you my friend.
 
-<p>###Setting Up
+###Setting Up
 For short NodeJS is Javascript running outside the browser, in this case in the server.
 ####Installation
-To install it, you can go to <a href="https://nodejs.org/">NodeJS Website</a>. But if you are using Mac and brew you can do:</p>
+To install it, you can go to [NodeJS Website](https://nodejs.org/). But if you are using Mac and brew you can do:
 
-<div class="highlighter-rouge"><pre class="highlight"><code>brew install node
-</code></pre>
-</div>
-<p>and in ubuntu use:</p>
+```
+brew install node
+``` 
+and in ubuntu use:
 
-<div class="highlighter-rouge"><pre class="highlight"><code>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+```
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
-</code></pre>
-</div>
-<p>Once you have, to see if Node is installed, type <code class="highlighter-rouge">node -v</code> in Terminal. This should print the version number so you’ll see something like this <code class="highlighter-rouge">v5.10.0</code></p>
+```
+Once you have, to see if Node is installed, type `node -v` in Terminal. This should print the version number so you’ll see something like this `v5.10.0`
 
-<p>And if you are a windows user, you can simply download the <a href="http://nodejs.org/#download">Windows Installer</a> directly from the <a href="https://nodejs.org/">official web site</a>.</p>
+And if you are a windows user, you can simply download the [Windows Installer](http://nodejs.org/#download) directly from the [official web site](https://nodejs.org/).
 
-<p>#####We’re all set to write our first server program! Wasn’t that easy :)</p>
+#####We're all set to write our first server program! Wasn't that easy :)
 
-<p>###Hello Server</p>
+###Hello Server
 
-<p>Okay so let’s start by opening your favourite text editor in my case I am using <a href="https://www.sublimetext.com/3">Sublime Text 3</a>, and creating a new file with a “.js” extension. Ex: “getting-started.js”, and in here we write our very own server:</p>
+Okay so let's start by opening your favourite text editor in my case I am using [Sublime Text 3](https://www.sublimetext.com/3), and creating a new file with a ".js" extension. Ex: "getting-started.js", and in here we write our very own server:
 
-<div class="highlighter-rouge"><pre class="highlight"><code>//Initialise http package built in to Node.js library to make http request.
+```
+//Initialise http package built in to Node.js library to make http request.
 var http = require('http');
 
 //This simple code as states 'creates' server, returns a JSON object. 
@@ -200,28 +201,28 @@ var server = http.createServer( function (request, response) {
 server.listen(3000);
 
 console.log("Http server started");
-</code></pre>
-</div>
+```
 
-<p>Once we have the above code in our JavaScript file, we can simply run it from the terminal,</p>
+Once we have the above code in our JavaScript file, we can simply run it from the terminal,
 
-<div class="highlighter-rouge"><pre class="highlight"><code>node getting-started.js
-</code></pre>
-</div>
-<p>Here, “getting-started.js” is the name with which I have saved my the file.
-It should output something like this:</p>
+```
+node getting-started.js
+```
+Here, "getting-started.js" is the name with which I have saved my the file.
+It should output something like this:
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt; node getting-started.js 
+```
+> node getting-started.js 
 Http server started
-</code></pre>
-</div>
+```
 
-<p>Now, if we just go to the browser and open the <code class="highlighter-rouge">http://localhost:3000/</code> we should be able to see a JSON object object is returned.</p>
+Now, if we just go to the browser and open the `http://localhost:3000/` we should be able to see a JSON object object is returned.
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="nt">"hello"</span><span class="p">:</span><span class="s2">"Server"</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
-<p>Is it working? Cool, you have embarked upon the wonderful world of Node.js! Is NOT working? take a look at the <a href="https://gist.github.com/MuqThe2nd/80573ee207205148ab401e4655054e24">code</a>.</p>
+```
+{"hello":"Server"}
+```
+Is it working? Cool, you have embarked upon the wonderful world of Node.js! Is NOT working? take a look at the [code](https://gist.github.com/MuqThe2nd/80573ee207205148ab401e4655054e24).
+
 
 </h3>
         <!-- </div>
