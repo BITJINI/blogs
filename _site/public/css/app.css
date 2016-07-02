@@ -132,7 +132,7 @@ div.inline { float:left; }
   margin-left: 4%;
   margin-top: -2.9% !important;
 }
-.row{margin-right:-82px;margin-left:85px;margin-top: 4%}
+.row{margin-right:-82px;margin-left:85px;margin-top: 0%}
 }
 
 @media (max-width:1800px){
@@ -141,7 +141,7 @@ div.inline { float:left; }
   margin-left: 4%;
   margin-top: -2.9% !important;
 }
-.row{margin-right:-82px;margin-left:85px;margin-top: 4%}
+.row{margin-right:-82px;margin-left:85px;margin-top: 0%}
 }
 
 @media (max-width:1700px){
@@ -149,7 +149,7 @@ div.inline { float:left; }
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-82px;margin-left:60px;margin-top: 4%}
+.row{margin-right:-82px;margin-left:60px;margin-top: 0%}
 }
 
 @media (max-width:1600px){
@@ -157,7 +157,7 @@ div.inline { float:left; }
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-82px;margin-left:50px;margin-top: 4%}
+.row{margin-right:-82px;margin-left:50px;margin-top: 0%}
 }
 
 @media (max-width:1500px){
@@ -165,7 +165,7 @@ div.inline { float:left; }
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-174px;margin-left:50px;margin-top: 4%}
+.row{margin-right:-174px;margin-left:50px;margin-top: 0%}
 }
 
 @media (max-width:1400px){
@@ -173,7 +173,7 @@ div.inline { float:left; }
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-15px;margin-left:46px;margin-top: 4%}
+.row{margin-right:-15px;margin-left:46px;margin-top: 0%}
 }
 
 @media (max-width:1330px){
@@ -181,7 +181,7 @@ div.inline { float:left; }
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-15px;margin-left:54px;margin-top: 4%}
+.row{margin-right:-15px;margin-left:54px;margin-top: 0%}
 }
 
 
@@ -198,7 +198,7 @@ div.inline { float:left; }
   margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:123px;margin-top: 3%}
+  margin-left:123px;margin-top: 0%}
 }
 
 @media (max-width:1000px) { 
@@ -208,7 +208,7 @@ div.inline { float:left; }
   margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:148px;margin-top: 3%}
+  margin-left:148px;margin-top: 0%}
 
 }
 
@@ -219,7 +219,7 @@ div.inline { float:left; }
   margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:32px;margin-top: 3%}
+  margin-left:32px;margin-top: 0%}
 
 }
 
