@@ -10,6 +10,7 @@ body, html {
    position: fixed;
    margin: 0;
    padding: 0;
+   width:100%;
 }
 
 @font-face {
@@ -124,24 +125,59 @@ div.inline { float:left; }
     overflow: auto;
 }
 
+@media (max-width:1800px){
 .span4 {
   width: 300px;
   margin-left: 4%;
 }
-.row{margin-right:-15px;margin-left:141px;margin-top: 4%}
+.row{margin-right:-82px;margin-left:85px;margin-top: 4%}
+}
+
+@media (max-width:1700px){
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+}
+.row{margin-right:-82px;margin-left:60px;margin-top: 4%}
+}
+
+@media (max-width:1600px){
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+}
+.row{margin-right:-82px;margin-left:50px;margin-top: 4%}
+}
+
+@media (max-width:1500px){
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+}
+.row{margin-right:-174px;margin-left:50px;margin-top: 4%}
+}
+
+@media (max-width:1400px){
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+}
+.row{margin-right:-15px;margin-left:46px;margin-top: 4%}
+}
+
+@media (max-width:1330px){
+.span4 {
+  width: 300px;
+  margin-left: 4%;
+}
+.row{margin-right:-15px;margin-left:54px;margin-top: 4%}
+}
+
+
 
 /*Smaller screens responsive*/
 
-@media (max-width:1300px){
 
-
-.span4 {
-  width: 300px;
-  margin-left: 5%;
-}
-.row{margin-right:-15px;
-  margin-left:123px}
-}
 
 @media (max-width:1200px){
 
@@ -151,20 +187,165 @@ div.inline { float:left; }
   margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:123px;margin-top: 0%}
+  margin-left:123px;margin-top: 3%}
 }
-
-
 
 @media (max-width:1000px) { 
 
 .span4 {
   width: 300px;
-  margin-left: 14%;
+  margin-left: 5%;
 }
 .row{margin-right:-15px;
-  margin-left:-15px}
+  margin-left:148px;margin-top: 3%}
+
 }
+
+@media (max-width:991px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:32px;margin-top: 3%}
+
+}
+
+@media (max-width:900px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:5px;margin-top: 0%}
+
+}
+
+
+@media (max-width:825px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:-10px;margin-top: 0%}
+
+}
+
+
+@media (max-width:800px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:-22px;margin-top: 0%}
+
+}
+
+@media (max-width:767px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:28px;margin-top: 0%}
+
+}
+
+@media (max-width:700px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:18px;margin-top: 0%}
+
+}
+
+@media (max-width:600px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:18px;margin-top: 0%}
+
+}
+
+@media (max-width:550px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:35px;margin-top: 0%}
+
+}
+
+@media (max-width:500px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:18px;margin-top: 0%}
+
+}
+
+@media (max-width:450px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:10px;margin-top: 0%}
+
+}
+
+@media (max-width:400px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:-4px;margin-top: 0%}
+}
+
+@media (max-width:340px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:-8px;margin-top: 0%}
+}
+
+@media (max-width:320px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 5%;
+}
+.row{margin-right:-15px;
+  margin-left:-12px;margin-top: 0%}
+}
+
+
+@media (max-width:1000px) { 
+
 
 
 
@@ -183,10 +364,7 @@ div.inline { float:left; }
         a{
           margin-right: 2%;
         }
-        .span4{
-          margin-left: 2% !important;
-        }
-
+  
 
         #img2{
           width:140px !important;
@@ -229,9 +407,7 @@ div.inline { float:left; }
         a{
           margin-right: 18%;
         }
-        .span4{
-          margin-left: 2% !important;
-        }
+     
 
 
         #img2{
@@ -264,9 +440,7 @@ div.inline { float:left; }
         a{
           margin-right: 33%;
         }
-        .span4{
-          margin-left: 2% !important;
-        }
+    
 
 
         #img2{
@@ -300,9 +474,7 @@ div.inline { float:left; }
         a{
           margin-right: 55%;
         }
-        .span4{
-          margin-left: 2% !important;
-        }
+     
 
 
         #img2{

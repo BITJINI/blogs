@@ -13,9 +13,9 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 
 So, if you are a JavaScript enthusiast and want to try server side coding as well then here is the thing for you my friend.
 
-###Setting Up
+Setting Up
 For short NodeJS is Javascript running outside the browser, in this case in the server.
-####Installation
+Installation
 To install it, you can go to [NodeJS Website](https://nodejs.org/). But if you are using Mac and brew you can do:
 
 ```
@@ -31,9 +31,9 @@ Once you have, to see if Node is installed, type `node -v` in Terminal. This sho
 
 And if you are a windows user, you can simply download the [Windows Installer](http://nodejs.org/#download) directly from the [official web site](https://nodejs.org/).
 
-#####We're all set to write our first server program! Wasn't that easy :)
+We're all set to write our first server program! Wasn't that easy :)
 
-###Hello Server
+Hello Server
 
 Okay so let's start by opening your favourite text editor in my case I am using [Sublime Text 3](https://www.sublimetext.com/3), and creating a new file with a ".js" extension. Ex: "getting-started.js", and in here we write our very own server:
 
