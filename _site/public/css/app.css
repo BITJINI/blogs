@@ -103,16 +103,15 @@ h3 {
 
 #img1{
 
-  width:150px;height:150px;
+  width:300px;
   object-fit: contain;
 }
 
 #img2{
 
-  width:200px;height:200px;
+  width:300px;
    object-fit: contain;
   vertical-align: center;
-  margin-left: 34%;
 }
 
 div.inline { float:left; }
@@ -372,8 +371,7 @@ div.inline { float:left; }
 
         #img1{
 
-          width:120px !important;
-          height:120px !important;
+          width:200px !important;
         }
 
         .post-container {
@@ -388,9 +386,7 @@ div.inline { float:left; }
   
 
         #img2{
-          width:140px !important;
-          height:140px !important;
-          margin-left: 38%;
+          width:200px !important;
         }
         .title{
           margin-left: -2%;
@@ -415,8 +411,7 @@ div.inline { float:left; }
 @media (max-width:645px) { 
         #img1{
 
-          width:120px !important;
-          height:120px !important;
+          width:200px !important;
         }
 
         .post-container {
@@ -432,9 +427,7 @@ div.inline { float:left; }
 
 
         #img2{
-          width:140px !important;
-          height:140px !important;
-          margin-left: 29%;
+          width:200px !important;
         }
         .title{
           margin-left: -20%;
@@ -448,8 +441,7 @@ div.inline { float:left; }
 @media (max-width:550px) { 
         #img1{
 
-          width:120px !important;
-          height:120px !important;
+          width:200px !important;
         }
 
         .post-container {
@@ -465,9 +457,7 @@ div.inline { float:left; }
 
 
         #img2{
-          width:140px !important;
-          height:140px !important;
-          margin-left: 22%;
+          width:200px !important;
         }
         .title{
           margin-left: -34%;
@@ -482,8 +472,7 @@ div.inline { float:left; }
 @media (max-width:400px) { 
         #img1{
 
-          width:120px !important;
-          height:120px !important;
+          width:200px !important;
         }
 
         .post-container {
@@ -499,9 +488,7 @@ div.inline { float:left; }
 
 
         #img2{
-          width:140px !important;
-          height:140px !important;
-          margin-left: 11%;
+          width:200px !important;
         }
         .title{
           margin-left: -55%;

@@ -17,16 +17,18 @@ layout: default
 
  
 
-  <!-- div class="post-container">                
-        <div class="post-thumb"> -->
+  <div class="post-container">                
+   <!--      <div class="post-thumb"> -->
+        <div align="middle">
           {% if page.image != %}
              <img id="img2" style="" src="/blogs/assets/{{ page.image }}" />
           {% endif %}
+        </div>
         <!-- </div> 
         <div class="post-content"> -->
-            <h3 id="con">{{ content }}</h3>
-        <!-- </div>
-      </div> -->
+            <h3>{{ content }}</h3>
+        <!-- </div>-->
+  </div> 
 
   <div>
             {% if page.profile != %}
