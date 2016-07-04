@@ -19,18 +19,22 @@ Android stores Shared Preferences settings as XML file in **shared_prefs** folde
 DATA/data/{application package} directory.
 ```
 
-The DATA folder can be obtained by callingEnvironment.getDataDirectory().
+The DATA folder can be obtained by 
+
+```
+callingEnvironment.getDataDirectory().
+```
 
 Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.
 
 **Step 1**:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.
-
 
 ````````
 SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
 Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
 
 ````````
+
 MY_PREFS : name of the file 
 0 : is the operating mode
 
@@ -50,6 +54,7 @@ editor.commit();
 
 **Step 3**:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below
 
+
 ````````
 if (sharedpreferences.contains("name")) {
   sharedPreferences.getString("name",””);
@@ -60,4 +65,5 @@ if (sharedpreferences.contains("password")) {
 ````````
 
 Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.
+
 

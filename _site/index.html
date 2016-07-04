@@ -409,7 +409,17 @@ Http server started</p>
 
 <p>Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.</p>
 
-<p>Android stores Shared Preferences settings as XML file in <strong>shared_prefs</strong> folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().</p>
+<p>Android stores Shared Preferences settings as XML file in <strong>shared_prefs</strong> folder under</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>DATA/data/{application package} directory.
+</code></pre>
+</div>
+
+<p>The DATA folder can be obtained by</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>callingEnvironment.getDataDirectory().
+</code></pre>
+</div>
 
 <p>Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.</p>
 
@@ -420,6 +430,7 @@ Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
 
 </code></pre>
 </div>
+
 <p>MY_PREFS : name of the file 
 0 : is the operating mode</p>
 
