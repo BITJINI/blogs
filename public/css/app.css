@@ -1,4 +1,4 @@
-
+@CHARSET "ISO-8859-1";
 @import url('fonts.css');
 .navbar-default{
   border: transparent !important;
@@ -15,9 +15,15 @@ body, html {
 
 
 @font-face {
-  font-family: Roboto-Light;
-  src: url(/blogs/public/css/Roboto-Medium.ttf);
+  font-family: Roboto-Regular;
+  src: url(/blogs/public/css/Roboto-Regular.ttf);
 }
+
+@font-face {
+  font-family: Roboto-CondensedItalic;
+  src: url(/blogs/public/css/Roboto-CondensedItalic.ttf);
+}
+
 @font-face {
   font-family: Respective-Regular;
   src: url(/blogs/public/css/Respective-Regular.ttf);
@@ -29,25 +35,48 @@ h4{
 
 
 a{
-  color: #E84B5D;
-}
-
-
-#title a{
-  font-size: 26px;
-    color: #E84B5D;
-    margin-top: 97%;
-    font-family: Roboto-CondensedItalic;
-    letter-spacing: 2px;
-  text-decoration: none;
-  text-align: center;
-
+  color: #E51937;
 }
 
 
 #side_title{
-  font-family: Roboto-Regular !important;
+  text-align:left;
+  font-family: Roboto-CondensedItalic !important;
+  color: #E51937;
 }
+#title{
+  padding-bottom: 8px;
+  margin-top:1%;
+  border-bottom: 1px solid #CFCFCF;
+
+
+    font-size: 29px;
+}
+#title a{
+  font-size: 29px;
+    color: #E51937;
+    margin-top: 97%;
+    font-family: Roboto-CondensedItalic !important;
+    letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: normal;
+
+}
+p {
+
+   text-align:justify;
+   margin-right: 7%;
+  /*  margin-left: 220px*/
+  font-size: 16px !important;
+    color: gray !important;
+    font-family: Roboto-Regular !important;
+    letter-spacing: 0.5px !important;
+    line-height: 30px !important;
+
+}
+
+
 
 #bit_blog{
   font-family: Respective-Regular !important;
@@ -66,7 +95,7 @@ a{
     display: block
 }
 
-h3::first-letter{
+p::first-letter{
   /*color:#3197FF;
   font-weight: bold;
   font-style: italic;
@@ -85,35 +114,8 @@ h4{
   color:black;
   /*font-weight: bold !important;*/
 }
-h3 {
-
-   text-align:justify;
-   margin-right: 7%;
-  /*  margin-left: 220px*/
-  font-size: 14px !important;
-    color: gray !important;
-    font-family: Roboto-Regular !important;
-    letter-spacing: 0.5px !important;
-    line-height: 20px !important;
-}
-#side_title{
-  text-align:left;
 
 
-}
-
-#title{
-  text-align:center;
-  padding-bottom: 8px;
-  margin-top:1%;
-  border-bottom: 1px solid #CFCFCF;
-
-    font-size: 26px;
-    color: #E84B5D !important;
-    font-family: Roboto-CondensedItalic;
-    letter-spacing: 2px;
-  /*font-weight: bold;*/
-}
 
 
 #img1{
@@ -375,7 +377,7 @@ div.inline { float:left; }
   margin-left: 2%;
 }
 .row{margin-right:-15px;
-  margin-left:-12px;margin-top: 0%}
+  margin-left:-25px;margin-top: 0%}
 }
 
 
@@ -406,16 +408,14 @@ div.inline { float:left; }
           margin-right: 3% !important;
         }
 
-        #title{
-          font-size: 20px !important;
-        }
+        
          #title a{
           margin-left:-33px;
         }
 
 
-        h3{
-          font-size: 13px !important;
+        p{
+          font-size: 15px !important;
         }
        /* h3::first-letter{
           font-size: 30px !important;
