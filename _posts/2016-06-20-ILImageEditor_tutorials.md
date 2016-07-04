@@ -17,7 +17,7 @@ While I was working on an image editing **[application](https://appsto.re/in/mEN
 
 Ok, so to start the tutorial we'll just install the pod by adding the following line to our Podfile.
 
-````````
+```
 platform :ios, '8.0'
 
 target 'MyProjectName' do
@@ -25,7 +25,7 @@ target 'MyProjectName' do
   pod 'ILImageEditor'
 
 end
-````````
+```
 If you haven't initialised the pod yet then just type
 
 ```

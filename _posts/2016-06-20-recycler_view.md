@@ -24,7 +24,7 @@ The RecyclerView has been developed with extensibility in mind. It is new ViewGr
 GridLayoutManager will decide which part of screen the views are to be placed. It must be able to manage scrolling and recycling and to manage the views in different orders then we can use SpanSizeLookup which manages according to the spaces as shown in below code snippet:
 
 
-````````
+```
 GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3);
 mRecyclerView.setLayoutManager(mLayoutManager);
 
@@ -39,7 +39,7 @@ mLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
         }
     });
 
-````````
+```
 
 you can change count of spaces on each position according to your needs. **[To know more](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html)**
 

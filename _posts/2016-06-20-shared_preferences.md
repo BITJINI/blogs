@@ -29,11 +29,11 @@ Shared Preferences is application specific i.e data is lost if the user uninstal
 
 **Step 1**:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.
 
-````````
+```
 SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
 Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
 
-````````
+```
 
 MY_PREFS : name of the file 
 0 : is the operating mode
@@ -43,26 +43,26 @@ The first parameter is the key and second parameter is the mode.
 **Step 2**:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.
 
 
-````````
+```
 SharedPreferences.Editor editor = sharedPreferences.edit();
 editor.putString("name", sName));
 editor.putString("password", sPassword));
 
 editor.commit();
 
-````````
+```
 
 **Step 3**:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below
 
 
-````````
+```
 if (sharedpreferences.contains("name")) {
   sharedPreferences.getString("name",””);
 }
 if (sharedpreferences.contains("password")) {
   sharedPreferences.getString("password",””);
 }
-````````
+```
 
 Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.
 
