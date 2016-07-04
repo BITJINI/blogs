@@ -159,6 +159,97 @@ function showhide()
 
     <div class="post">
       <h1 id="title" style="text-align: center">
+        <a title="Velocity.js"  href="/blogs/2016/07/04/velocity/">Velocity.js</a>
+      </h1>
+
+      
+      <div class="post-container">                
+        <div class="post-thumb" align="middle">
+          
+             <img id="img1" style="" src="assets/velocity-js.jpg" />
+          
+        </div> 
+        <div class="post-content">
+            <p><p>Velocity is a cross-platform JavaScript library designed to simplify the client-side scripting of website animation.
+Velocity’s syntax is designed to make it easier to create complex animations for HTML and CSS elements. Velocity to be used for sophisticated animation programming that can be integrated into both web and mobile applications.</p>
+
+<p><strong>Library</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;script src="velocity.min.js"&gt;&lt;/script&gt;
+&lt;script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"&gt;&lt;/script&gt;
+</code></pre>
+</div>
+
+<p><strong>Usage</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// Animate an element's width to 100px and its left property to 200px
+$element.velocity({ width: "100px", left: "200px" });
+// Animate an element's width to 100px over a 1000ms duration after pausing for a 100s delay.
+$element.velocity({ width: "100px" }, { duration: 1000, delay: 100 });
+</code></pre>
+</div>
+
+<p><strong>Chaining</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>//Creating a series of consecutive animation calls in Velocity consists of placing velocity() calls back-to-back on the target jQuery element object.
+$element
+    .velocity({ height: 300 }, { duration: 1000 })
+    // Continue on to this animation once the previous one has completed
+    .velocity({ top: 200 }, { duration: 600 })
+   // And once more...
+    .velocity({ opacity: 0 }, { duration: 200 });
+</code></pre>
+</div>
+
+<p><strong>Scrolling</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// Scroll with a duration of 750ms
+$element.velocity("scroll", { duration: 750 });
+</code></pre>
+</div>
+
+<p><strong>Reversal</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// Reverse the previous animation; animate back to the element's original height using the previous duration
+$element.velocity("reverse");
+</code></pre>
+</div>
+
+<p><strong>Features</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- Browser window and element scrolling.
+- Independence from the jQuery framework.
+- Animation reversal and animation looping.
+- RGB and hex color animation.
+- CSS's transform property animation.
+- Pre-created animation effects via Velocity's UI Pack.
+- Physics-based motion via the spring easing type.
+- Promises integration.
+- Supports low-powered devices.
+</code></pre>
+</div>
+</p>
+        </div>
+      </div>
+      
+      
+      <div>
+            
+              <img style="width:10%;height:10%" src="assets/Pooja.jpg"></img>
+            
+            <span class="date">
+              
+              04 Jul 2016
+             
+            </span>
+            <a  target="_blank" href="http://github.com/poojapauskar" class="author-link">@poojapauskar</a>
+      </div>
+    </div>
+    <br>
+  
+
+    <div class="post">
+      <h1 id="title" style="text-align: center">
         <a title="Starting Node.js"  href="/blogs/2016/06/28/Starting-Node/">Starting Node.js</a>
       </h1>
 
@@ -654,17 +745,11 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
 
 <p><strong>Social Login helps in</strong></p>
 
-<ol>
-  <li>
-    <p><strong>Targeted Content</strong> - Websites can obtain user’s profile information.</p>
-  </li>
-  <li>
-    <p><strong>Multiple Identities</strong> - Users can log in to websites with multiple social identities.</p>
-  </li>
-  <li>
-    <p><strong>Registration Data</strong> - Speed up the registration or sign­up process.</p>
-  </li>
-</ol>
+<div class="highlighter-rouge"><pre class="highlight"><code>Targeted Content - Websites can obtain user's profile information.
+Multiple Identities - Users can log in to websites with multiple social identities.
+Registration Data - Speed up the registration or sign­up process.
+</code></pre>
+</div>
 
 </p>
         </div>
@@ -698,6 +783,14 @@ Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core 
 
 <h4>Recent Posts</h4>
 
+
+  <div class="recent">
+    <p  id="side_title" >
+      <a title="Velocity.js" href="/blogs/2016/07/04/velocity/">Velocity.js</a>
+      <br>
+      <span class="muted">04 Jul 2016</span>
+    </p>
+  </div>
 
   <div class="recent">
     <p  id="side_title" >

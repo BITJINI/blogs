@@ -22,10 +22,9 @@ Social login, also known as social sign­in, is a form of single sign­on using 
 
 **Social Login helps in**
 
-1. **Targeted Content** - Websites can obtain user's profile information.
-
-2. **Multiple Identities** - Users can log in to websites with multiple social identities.
-
-3. **Registration Data** - Speed up the registration or sign­up process.
-
+```
+Targeted Content - Websites can obtain user's profile information.
+Multiple Identities - Users can log in to websites with multiple social identities.
+Registration Data - Speed up the registration or sign­up process.
+```
 
