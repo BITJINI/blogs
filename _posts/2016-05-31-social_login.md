@@ -9,8 +9,6 @@ image: blogs_image.png
 user_image: Pooja.jpg
 ---
 
-Login with Facebook, Twitter and Google
-
 **Social Login**
 
 Social login, also known as social sign­in, is a form of single sign­on using existing login information from a social networking service such as Facebook, Twitter or Google+ to sign into a third party website instead of creating a new login account specifically for that website.
@@ -22,9 +20,9 @@ Social login, also known as social sign­in, is a form of single sign­on using 
 
 **Social Login helps in**
 
-```
-Targeted Content - Websites can obtain user's profile information.
-Multiple Identities - Users can log in to websites with multiple social identities.
-Registration Data - Speed up the registration or sign­up process.
-```
+
+- Targeted Content - Websites can obtain user's profile information.
+- Multiple Identities - Users can log in to websites with multiple social identities.
+- Registration Data - Speed up the registration or sign­up process.
+
 

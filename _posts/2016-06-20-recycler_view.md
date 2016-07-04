@@ -11,9 +11,9 @@ user_image: Shradha.jpg
 
 As I am working on Collage of an images, so need to be comfortable with
 
--RecyclerView
+- RecyclerView
 
--GridLayoutManager
+- GridLayoutManager
 
 **RecyclerView: What it is?**
 

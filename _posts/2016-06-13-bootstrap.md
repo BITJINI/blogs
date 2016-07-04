@@ -9,7 +9,7 @@ image: bt_image.jpg
 user_image: Nagaraj.jpg
 ---
 
-Bootstrap
+**Bootstrap**
 
 Even in present day scenario, we have seen that most of the companies, organizations, enterprises and many startups use the key concept called “website” for marketing, advertising thier products and projects. Eventhough, it looks like an old concept, it has its own beauty and value that appeals to almost all the users. By using frameworks like Bootstrap we can construct some of the most awesome websites. The websites which are designed using Bootstrap gives quality touch which helps in building an instant relationship between the people and the company. 
  
