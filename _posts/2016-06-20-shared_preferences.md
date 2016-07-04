@@ -13,7 +13,13 @@ user_image: veena.jpg
 
 Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.
 
-Android stores Shared Preferences settings as XML file in **shared_prefs** folder under DATA/data/{application package} directory. The DATA folder can be obtained by callingEnvironment.getDataDirectory().
+Android stores Shared Preferences settings as XML file in **shared_prefs** folder under 
+
+```
+DATA/data/{application package} directory.
+```
+
+The DATA folder can be obtained by callingEnvironment.getDataDirectory().
 
 Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.
 
