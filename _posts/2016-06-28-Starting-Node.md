@@ -23,9 +23,10 @@ brew install node
 ``` 
 and in ubuntu use:
 
-
+```
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
+```
 
 Once you have, to see if Node is installed, type `node -v` in Terminal. This should print the version number so you’ll see something like this `v5.10.0`
 
@@ -65,7 +66,7 @@ node getting-started.js
 Http server started
 
 
-Now, if we just go to the browser and open the `http://localhost:3000/` we should be able to see a JSON object object is returned.
+Now, if we just go to the browser and open the [link](http://localhost:3000/) we should be able to see a JSON object object is returned.
 
 ```
 {"hello":"Server"}
