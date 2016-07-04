@@ -38,8 +38,15 @@ a{
   color: #E51937;
 }
 
+#title1{
+  padding-bottom: 8px;
+  margin-top:1%;
+  border-bottom: 1px solid #CFCFCF;
 
-h1{
+
+    font-size: 29px;
+}
+#title1{
    font-size: 29px;
     color: #E51937 !important;
     margin-top: 97%;
@@ -430,7 +437,7 @@ div.inline { float:left; }
 
         
          #title a{
-          margin-left:-33px;
+          margin-left:6px;
         }
         #title{
           margin-left:-33px;
@@ -464,9 +471,9 @@ div.inline { float:left; }
         }
        
          #title a{
-          margin-left:-133px;
+          margin-left:-90px;
         }
-        #title{
+        #title1{
           margin-left:-133px;
         }
 
@@ -495,9 +502,9 @@ div.inline { float:left; }
         }
        
          #title a{
-          margin-left:-251px;
+          margin-left:-215px;
         }
-        #title{
+        #title1{
           margin-left:-251px;
         }
 
@@ -527,10 +534,10 @@ div.inline { float:left; }
         }
      
         #title a{
-          margin-left:-339px;
+          margin-left:-309px;
         }
 
-        #title{
+        #title1{
           margin-left:-339px;
         }
 
