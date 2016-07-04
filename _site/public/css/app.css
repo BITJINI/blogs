@@ -387,6 +387,16 @@ div.inline { float:left; }
   margin-left:9px;margin-top: 0%}
 }
 
+@media (max-width:370px) { 
+
+.span4 {
+  width: 300px;
+  margin-left: 2%;
+}
+.row{margin-right:-15px;
+  margin-left:-13px;margin-top: 0%}
+}
+
 @media (max-width:340px) { 
 
 .span4 {
