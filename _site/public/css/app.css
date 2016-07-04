@@ -87,7 +87,6 @@ p {
 }
 li{
 text-align:justify;
-   margin-right: 7%;
   /*  margin-left: 220px*/
   font-size: 16px !important;
     color: gray !important;
@@ -433,6 +432,9 @@ div.inline { float:left; }
          #title a{
           margin-left:-33px;
         }
+        #title{
+          margin-left:-33px;
+        }
 
 
         p{
@@ -464,6 +466,9 @@ div.inline { float:left; }
          #title a{
           margin-left:-133px;
         }
+        #title{
+          margin-left:-133px;
+        }
 
 
         #img2{
@@ -490,6 +495,9 @@ div.inline { float:left; }
         }
        
          #title a{
+          margin-left:-251px;
+        }
+        #title{
           margin-left:-251px;
         }
 
@@ -519,6 +527,10 @@ div.inline { float:left; }
         }
      
         #title a{
+          margin-left:-339px;
+        }
+
+        #title{
           margin-left:-339px;
         }
 
