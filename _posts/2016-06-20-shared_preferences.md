@@ -30,9 +30,8 @@ Shared Preferences is application specific i.e data is lost if the user uninstal
 **Step 1**:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.
 
 ```
-SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);        
-Ex: sharedPreferences =getSharedPreferences(MY_PREFS, 0);
-
+SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+Ex : sharedPreferences = getSharedPreferences(MyPREFS, 0);
 ```
 
 MY_PREFS : name of the file 
