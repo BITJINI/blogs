@@ -1,15 +1,13 @@
 ---
 layout: post
 categories: []
-title: So the mobile era is here:'',''
+title: So the mobile era is here?
 summary: social login
 author: 
 profile: https://plus.google.com/u/1/108492246033814317129/posts
 image: lionel.png
 user_image: lionel.jpg
 ---
-
-So the Mobile era is here.
 
 The number of mobile users are increasing day by day and are greater than the number of desktop users.  80% of time spent on mobile devices is spent using apps, leading to apps becoming the dominant form of digital interaction. 
 Developing both mobile website and mobile app for your business can prove to be a costly affair. You might have to choose one of the two channels, based on your budget and business goals. The choice between mobile apps and websites depends on their cost, usability, required features and the audience they serve. While both channels have their own pros and cons, mobile apps especially, can help you get higher conversions. Businesses have realised the need to effectively use mobile channels for attracting customers and these apps can offer greater personalisation and operational efficiency, along with other multiple exclusive features.
