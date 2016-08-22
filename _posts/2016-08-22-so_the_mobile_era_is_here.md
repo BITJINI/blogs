@@ -3,7 +3,7 @@ layout: post
 categories: []
 title: So the mobile era is here?
 summary: social login
-author: 
+author: lionel
 profile: https://plus.google.com/u/1/108492246033814317129/posts
 image: lionel.png
 user_image: lionel.jpg
