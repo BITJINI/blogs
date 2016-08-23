@@ -7,16 +7,16 @@
     <link href="http://gmpg.org/xfn/11" rel="profile">
 
     <!-- Meta tags -->
-    <title>Shared Preferences</title>
-    <meta name="description" content="Shared Preferences" />
+    <title>So the mobile era is here?</title>
+    <meta name="description" content="social login" />
     <meta name="keywords" content="" />
 
     <!-- Open graph -->
-    <meta property="og:title" content="Shared Preferences"/>
+    <meta property="og:title" content="So the mobile era is here?"/>
     <meta property="og:type" content="blog"/>
     <meta property="og:site_name" content="Changer.nl"/>
-    <meta property="og:description" content="Shared Preferences" />
-    <meta property="og:url" content="http://changer.nl/devlog/2016/06/20/shared_preferences/" />
+    <meta property="og:description" content="social login" />
+    <meta property="og:url" content="http://changer.nl/devlog/2016/08/22/so_the_mobile_era_is_here/" />
     <meta property="og:image" content="http://changer.nl/devlog/public/logo.png" />
 
     <!-- CSS -->
@@ -154,7 +154,7 @@ function showhide()
 <br>
 
  <h1 id="title1"  style="margin-top:-2%;text-align:center">
-        Shared Preferences
+        So the mobile era is here?
       </h1>
 
  
@@ -163,75 +163,35 @@ function showhide()
    <!--      <div class="post-thumb"> -->
         <div align="middle">
           
-             <img id="img2" style="" src="/blogs/assets/shared_p.png" />
+             <img id="img2" style="" src="/blogs/assets/lionel.png" />
           
         </div>
         <!-- </div> 
         <div class="post-content"> -->
-            <p><p><strong>Shared Preferences</strong></p>
+            <p><p>The number of mobile users are increasing day by day and are greater than the number of desktop users.  80% of time spent on mobile devices is spent using apps, leading to apps becoming the dominant form of digital interaction. 
+Developing both mobile website and mobile app for your business can prove to be a costly affair. You might have to choose one of the two channels, based on your budget and business goals. The choice between mobile apps and websites depends on their cost, usability, required features and the audience they serve. While both channels have their own pros and cons, mobile apps especially, can help you get higher conversions. Businesses have realised the need to effectively use mobile channels for attracting customers and these apps can offer greater personalisation and operational efficiency, along with other multiple exclusive features.</p>
 
-<p>Android provides many ways to store the data of the application. One of the way is Shared Preferences. Shared Preferences allows you to save the state of an activity or any important data  in the form of key-value pairs and the data will persist even when the user closes the application.Each SharedPreferences file is managed by the framework and can be private or shared.</p>
+<p>This makes for a strong reason to have mobile apps for reaching out to potential and existing customers. With mobile app it’s easy to treat users with personalised experience which can be curated for the users specific purposes to be actionable, and easily accessible in brief, spontaneous moments. Providing a more distinct engaging, efficient, and rich effective user experience, native apps have the advantage and capabilities which is a significant improvement over a responsive web site, thus saving the end-users time and frustration.</p>
 
-<p>Android stores Shared Preferences settings as XML file in <strong>shared_prefs</strong> folder under</p>
+<p>For example, if a student needs to visit a professor, he or she could visit a responsively-designed site, navigate to the directory, search for the professor, copy the phone number out to their phone to call the professor, return to the site to learn where the office is located, and copy that location into a mapping application, all from their phone.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>DATA/data/{application package} directory.
-</code></pre>
-</div>
+<p> Alternately, the same student could open a native app, select the directory right from the home screen, tap to call from within the app, then tap on the office location pin and use the pathfinder to locate the office. All of this is accomplished quickly and efficiently within a consistent and immersive app experience, without having to switch between applications.</p>
 
-<p>The DATA folder can be obtained by</p>
+<p>Users who encounter mobile web experiences that force them to tap, search, copy, and navigate too many times will often give up on their original task. The deep-linking capabilities of a native apps keep users focused, allowing them to complete their goal quickly and efficiently.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>callingEnvironment.getDataDirectory().
-</code></pre>
-</div>
+<p>In fact, these days you’ll notice that many small businesses you interact with in your everyday life, have their own dedicated mobile app, be it the corner coffee shop or the beauty parlour downtown. These companies are ahead of the game when it comes to taking their marketing and productivity to the next level.</p>
 
-<p>Shared Preferences is application specific i.e data is lost if the user uninstalls the application or if the user clears the application data through settings.</p>
-
-<p><strong>Step 1</strong>:To use shared preferences , you have to call a method getSharedPreferences() that returns a SharedPreference instance pointing to the file that contains the values of preferences.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-Ex : sharedPreferences = getSharedPreferences(MyPREFS, 0);
-</code></pre>
-</div>
-
-<p>MY_PREFS : name of the file 
-0 : is the operating mode</p>
-
-<p>The first parameter is the key and second parameter is the mode.</p>
-
-<p><strong>Step 2</strong>:  We can save data to sharedpreferences using SharedPreferences.Editor class, for which we need to use edit method of the shared preference.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString("name", sName));
-editor.putString("password", sPassword));
-
-editor.commit();
-
-</code></pre>
-</div>
-
-<p><strong>Step 3</strong>:To retrive the values for corresponding keys you should use sharedpreferences.getString() method as shown below</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>if (sharedpreferences.contains("name")) {
-  sharedPreferences.getString("name",””);
-}
-if (sharedpreferences.contains("password")) {
-  sharedPreferences.getString("password",””);
-}
-</code></pre>
-</div>
-
-<p>Thus, using these get and put methods in shared preference we can perform this save and retrieval functionality.</p>
-
+<p>Either way you go, a mobile app is going to be a standard component of any business in the future. The choice you make today is going set the foundation for the future of your business. It’s up to you to choose whether you’d like to be one of the first..</p>
 </p>
         <!-- </div>-->
   </div> 
 
   <div>
             
-              <img style="width:10%;height:10%" src="/blogs/assets/veena.jpg"></img>
+              <img style="width:10%;height:10%" src="/blogs/assets/lionel.jpg"></img>
             
             <span class="right date">
-            20 Jun 2016 by <a href="http://github.com/veena14cs">@veena14cs</a>
+            22 Aug 2016 by <a href="http://github.com/lionel">@lionel</a>
             </span>
       </div>
 
