@@ -29,6 +29,11 @@ You get complete root access to your server as if it were your dedicated server.
 
 ***What are the benefits of VPS Hosting?***
 
+<<<<<<< HEAD
+=======
+VPS hosting gives you the affordability of shared hosting while at the same time giving you more power and control like a dedicated server.
+
+>>>>>>> testing
 - ***Privacy*** - As you don't share your OS with anyone else, there are no other websites on your server that potentially have access to your files.
 
 - ***Customization*** - With a VPS Server, you have your own Operating System. This also means that you have your own instances of all server applications such as Apache, PHP, and MySQL. If you need to have any of these services customized, you can make changes to suit the server to your needs.
