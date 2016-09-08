@@ -7,16 +7,16 @@
     <link href="http://gmpg.org/xfn/11" rel="profile">
 
     <!-- Meta tags -->
-    <title>ILImageEditor tutorial</title>
-    <meta name="description" content="ILImageEditor" />
+    <title>VPS Hosting</title>
+    <meta name="description" content="VPS Hosting" />
     <meta name="keywords" content="" />
 
     <!-- Open graph -->
-    <meta property="og:title" content="ILImageEditor tutorial"/>
+    <meta property="og:title" content="VPS Hosting"/>
     <meta property="og:type" content="blog"/>
     <meta property="og:site_name" content="Changer.nl"/>
-    <meta property="og:description" content="ILImageEditor" />
-    <meta property="og:url" content="http://changer.nl/devlog/2016/06/20/ILImageEditor_tutorials/" />
+    <meta property="og:description" content="VPS Hosting" />
+    <meta property="og:url" content="http://changer.nl/devlog/2016/09/08/vps_hosting/" />
     <meta property="og:image" content="http://changer.nl/devlog/public/logo.png" />
 
     <!-- CSS -->
@@ -154,7 +154,7 @@ function showhide()
 <br>
 
  <h1 id="title1"  style="margin-top:-2%;text-align:center">
-        ILImageEditor tutorial
+        VPS Hosting
       </h1>
 
  
@@ -163,131 +163,55 @@ function showhide()
    <!--      <div class="post-thumb"> -->
         <div align="middle">
           
-             <img id="img2" style="" src="/blogs/assets/ILImageEditor_Blog.png" />
+             <img id="img2" style="" src="/blogs/assets/vps.jpg" />
           
         </div>
         <!-- </div> 
         <div class="post-content"> -->
-            <p><p><strong>ILImageEditor</strong></p>
+            <p><p><strong><em>VPS Hosting</em></strong></p>
 
-<p>While I was working on an image editing <strong><a href="https://appsto.re/in/mEN5cb.i">application</a></strong> I came across some very basic operations that every application performs on the image being edited. The code wasn’t difficult to write for it, but “Hey! who wants to do all that work”. So, I decide to write a simple framework that performs these operations for the developer.</p>
+<p>A virtual private server (VPS) is a virtual machine sold as a service by an Internet hosting service. A VPS hosting environment mimics a dedicated server within a shared hosting environment. It is technically both shared hosting and dedicated hosting.</p>
 
-<p><strong><a href="https://github.com/ill-Logical/ILImageEditor">ILImageEditor</a></strong> is a simple image editor that performs most basic yet widely performed operations on an image like rotation, mirroring of images, resizing and cropping.</p>
+<p><strong><em>Why is VPS Hosting different than Shared and Dedicated?</em></strong></p>
 
-<p>Ok, so to start the tutorial we’ll just install the pod by adding the following line to our Podfile.</p>
+<p>With our dedicated servers, you rent an entire server. This is optimal for people that have very high traffic to their websites or need to setup their server in a very specific way. Not everyone needs to have a fully dedicated web server however. If you’re just getting started with your website, you can save quite a bit of money if you rent a small portion of the server. Shared hosting is when you share a portion of the server with other users rather than rent an entire server to yourself.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>platform :ios, '8.0'
+<p><strong><em>How does VPS Hosting Work?</em></strong></p>
 
-target 'MyProjectName' do
-  use_frameworks!
-  pod 'ILImageEditor'
+<p>A VPS runs its own copy of an operating system, and customers have superuser-level access to that operating system instance, so they can install almost any software that runs on that OS. In VPS hosting, every website is hosted on a virtual private server on a more powerful hardware. A physical machine is divided into several virtual compartments, and server software is setup on them separately, making each unit capable of functioning independently.</p>
 
-end
-</code></pre>
-</div>
-<p>If you haven’t initialised the pod yet then just type</p>
+<p>Though other websites may be hosted on the same physical system, yours would be the only website(s) hosted in the virtual compartment allocated – with independent server resources (CPU, RAM, disk space, etc) to you. Other websites on the machine won’t affect the performance of yours. That means you get exactly the same system resources you pay for.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pod init
-</code></pre>
-</div>
-<p>and install the pod.</p>
+<p>It’s like each website resides in an isolated room with sufficient resources to live with.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pod install
-</code></pre>
-</div>
+<p>You get complete root access to your server as if it were your dedicated server. But technically you are still on the same physical machine and sharing its CPU, RAM, disk storage, and bandwidth. VPS hosting gives you complete control over your server and almost the same benefits of the pricey dedicated server. This way, you can get a virtual dedicated server for a much cheaper price and get higher performance for your website than a shared server.</p>
 
-<p>Now we’re all set to use the newly installed pod in our project.</p>
-
-<p>Let’s start by import the framework in our class.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>import ILImageEditor
-</code></pre>
-</div>
-
-<p>In the class we initialise the instance of the <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a>.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>var editor = ILImageEditor()
-</code></pre>
-</div>
-
-<p>Now, we can use this singleton to access the editing options provided by the installed framework.</p>
-
-<p><strong>Features</strong></p>
+<p><strong><em>What are the benefits of VPS Hosting?</em></strong></p>
 
 <ul>
-  <li>Fix orientation.</li>
-  <li>Rotate an image clockwise or anti-clockwise.</li>
-  <li>Mirror an image along horizontal or vertical axis.</li>
-  <li>Compress an image.</li>
-  <li>Resize an image to make it smaller.</li>
-  <li>Crop an image.</li>
+  <li>
+    <p><strong><em>Privacy</em></strong> - As you don’t share your OS with anyone else, there are no other websites on your server that potentially have access to your files.</p>
+  </li>
+  <li>
+    <p><strong><em>Customization</em></strong> - With a VPS Server, you have your own Operating System. This also means that you have your own instances of all server applications such as Apache, PHP, and MySQL. If you need to have any of these services customized, you can make changes to suit the server to your needs.</p>
+  </li>
+  <li>
+    <p><strong><em>Control</em></strong> - If you’re installing server applications that require a system restart, you can do so at any time. Even though technically you share a server with other VPS servers, your VPS server can be restarted without affecting anyone else.</p>
+  </li>
+  <li>
+    <p><strong><em>Dedicated Resources</em></strong> - On a VPS Server, you have dedicated amounts of RAM available to you at any time. Unlike shared hosting, there is no one else on your server that can use utilize all the RAM when you need it most!</p>
+  </li>
 </ul>
-
-<p><strong>First</strong> let’s start by fixing the rotated image orientation that iOS devices usually have upon exporting or uploading the image.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>let imageToFix = UIImage(named: "Sample")
-let fixedImage = editor.fixImageOrientation(imageToFix)
-</code></pre>
-</div>
-
-<p><strong>Second</strong>, we can start performing operations on an image.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>let image = UIImage(named: "Sample")
-let finishedImage = editor.editImageWithOptions(image, withOptions: .rotateClockWise)
-</code></pre>
-</div>
-
-<p>The above code takes an image and image operation as a parameter. So, as we can see we are asking <a href="https://github.com/ill-Logical/ILImageEditor"><strong>ILImageEditor</strong></a> to rotate the image in a clock wise direction, and return the new image. The return image is new image generated with new orientation and not merely rotated and returned. It’s ready for export/upload.</p>
-
-<p>Following are other options for <em>“withOptions”</em> that the above method provides functionality of are:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.rotateClockWise
-.rotateAntiClockWise
-.flipHorizontal
-.flipVertical
-</code></pre>
-</div>
-
-<p>And I hope the options are self explanatory.</p>
-
-<p><strong>Third</strong>, compress and resize an image to make it smaller in size or quality or both.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>let image = UIImage(named: "Sample")
-let finishedImage = editor.compressImageToSize(image, withSize: .half, compressionQualtity: 1.0)
-</code></pre>
-</div>
-
-<p>Following are other options for <em>“withSize”</em> that resize the image to a smaller size with stated ratio:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.half
-.oneThird
-.oneFourth
-.oneFifth
-</code></pre>
-</div>
-
-<p><strong>Fourth</strong>, crop an image to some rect.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>let rect = CGRect(x: 0.0, y: 0.0, width: 50.0, height: 100.0)
-let croppedImage = cropAnImageToRect(image, rectToCrop: rect)
-</code></pre>
-</div>
-
-<p>The above function crops the image that lie in the provided rect and returns the cropped image.</p>
-
-<p><strong>Conclusion</strong></p>
-
-<p>Hope you enjoyed what you read, if have any suggestions or want to request a functionality in the pod then please get in touch with me on Twitter <strong><a href="https://twitter.com/muqtadir_ahmed">@muqtadir_ahmed</a></strong>, or if you find any bugs or crashes please fork my repository at <strong><a href="https://github.com/ill-Logical/ILImageEditor">Github</a></strong> and send raise an issue.</p>
 </p>
         <!-- </div>-->
   </div> 
 
   <div>
             
-              <img style="width:10%;height:10%" src="/blogs/assets/Muqtadir.jpeg"></img>
+              <img style="width:10%;height:10%" src="/blogs/assets/Pooja.jpg"></img>
             
             <span class="right date">
-            20 Jun 2016 by <a href="http://github.com/ill-Logical">@ill-Logical</a>
+            08 Sep 2016 by <a href="http://github.com/poojapauskar">@poojapauskar</a>
             </span>
       </div>
 
